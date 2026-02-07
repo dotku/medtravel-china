@@ -152,7 +152,7 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
           <div className="max-w-2xl">
             <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-4 py-1 text-sm font-medium text-emerald-400 ring-1 ring-inset ring-emerald-500/20">
-              Guangxi, China
+              {t("home.location")}
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               {t("home.hero.title")}
@@ -185,17 +185,17 @@ export default function Home() {
       <section className="relative -mt-16 z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { value: "50+", label: "Partner Hospitals" },
-            { value: "10,000+", label: "Happy Patients" },
-            { value: "70%", label: "Cost Savings" },
-            { value: "24/7", label: "Support" },
+            { value: "50+", labelKey: "hospitals" },
+            { value: "10,000+", labelKey: "patients" },
+            { value: "70%", labelKey: "savings" },
+            { value: "24/7", labelKey: "support" },
           ].map((stat, index) => (
             <div
               key={index}
               className="rounded-2xl bg-white p-6 text-center shadow-xl"
             >
               <div className="text-3xl font-bold text-emerald-600">{stat.value}</div>
-              <div className="mt-1 text-sm text-gray-600">{stat.label}</div>
+              <div className="mt-1 text-sm text-gray-600">{t(`home.stats.${stat.labelKey}`)}</div>
             </div>
           ))}
         </div>
@@ -305,20 +305,13 @@ export default function Home() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Recover in Paradise
+                {t("home.recovery.title")}
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-gray-300">
-                Guilin is famous for its stunning karst mountain scenery along the Li River.
-                After your medical treatment, enjoy a peaceful recovery surrounded by one of
-                China&apos;s most beautiful natural landscapes.
+                {t("home.recovery.description")}
               </p>
               <ul className="mt-8 space-y-4">
-                {[
-                  "Li River cruise through karst mountains",
-                  "Yangshuo countryside cycling tours",
-                  "Traditional rice terrace visits",
-                  "Hot spring resorts for relaxation",
-                ].map((item, index) => (
+                {(t.raw("home.recovery.items") as string[]).map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-gray-300">
                     <svg className="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -400,10 +393,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yIDItNCAyLTZzLTItNC0yLTYgMi00IDItNi0yLTQtMi02IDItNCAyLTYtMi00LTItNiAyLTQgMi02LTItNC0yLTZ2LTJoMnYyYzAgMiAyIDQgMiA2cy0yIDQtMiA2IDIgNCAyIDYtMiA0LTIgNiAyIDQgMiA2LTIgNC0yIDYgMiA0IDIgNi0yIDQtMiA2djJoLTJ2LTJjMC0yLTItNC0yLTZzMi00IDItNnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20" />
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Ready to Start Your Medical Journey?
+            {t("home.cta.title")}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-emerald-100">
-            Contact us today for a free consultation and personalized treatment plan
+            {t("home.cta.subtitle")}
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link

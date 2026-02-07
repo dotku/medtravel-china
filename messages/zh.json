@@ -47,7 +47,28 @@
     "featuredHospitals": {
       "title": "合作医院",
       "subtitle": "配备双语服务的认证医疗机构"
-    }
+    },
+    "stats": {
+      "hospitals": "合作医院",
+      "patients": "满意患者",
+      "savings": "费用节省",
+      "support": "全天候服务"
+    },
+    "recovery": {
+      "title": "在人间仙境康复",
+      "description": "桂林以漓江沿岸壮观的喀斯特山水风光闻名于世。医疗结束后，在中国最美的自然风光中享受宁静的康复时光。",
+      "items": [
+        "漓江喀斯特山水游船",
+        "阳朔乡村骑行之旅",
+        "传统梯田观光",
+        "温泉度假村休闲"
+      ]
+    },
+    "cta": {
+      "title": "准备开始您的医疗之旅？",
+      "subtitle": "立即联系我们获取免费咨询和个性化治疗方案"
+    },
+    "location": "中国广西"
   },
   "services": {
     "dentalCare": {

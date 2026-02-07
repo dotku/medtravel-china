@@ -47,7 +47,28 @@
     "featuredHospitals": {
       "title": "Partner Hospitals",
       "subtitle": "Accredited medical facilities with English-speaking staff"
-    }
+    },
+    "stats": {
+      "hospitals": "Partner Hospitals",
+      "patients": "Happy Patients",
+      "savings": "Cost Savings",
+      "support": "Support"
+    },
+    "recovery": {
+      "title": "Recover in Paradise",
+      "description": "Guilin is famous for its stunning karst mountain scenery along the Li River. After your medical treatment, enjoy a peaceful recovery surrounded by one of China's most beautiful natural landscapes.",
+      "items": [
+        "Li River cruise through karst mountains",
+        "Yangshuo countryside cycling tours",
+        "Traditional rice terrace visits",
+        "Hot spring resorts for relaxation"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Your Medical Journey?",
+      "subtitle": "Contact us today for a free consultation and personalized treatment plan"
+    },
+    "location": "Guangxi, China"
   },
   "services": {
     "dentalCare": {
