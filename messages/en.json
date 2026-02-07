@@ -188,6 +188,136 @@
       ]
     }
   },
+  "pages": {
+    "services": {
+      "title": "Our Medical Services",
+      "subtitle": "World-class healthcare services tailored for international patients",
+      "viewPricing": "View Pricing",
+      "inquire": "Inquire",
+      "process": {
+        "title": "How It Works",
+        "subtitle": "Your journey to better health in 4 simple steps",
+        "steps": [
+          { "title": "Initial Consultation", "description": "Contact us with your medical needs and we'll provide a personalized plan." },
+          { "title": "Treatment Planning", "description": "Our medical team reviews your case and prepares a detailed treatment plan." },
+          { "title": "Travel Arrangement", "description": "We handle all travel logistics including flights, accommodation, and transfers." },
+          { "title": "Treatment & Recovery", "description": "Receive treatment at our partner hospitals with full support throughout." }
+        ]
+      },
+      "cta": {
+        "title": "Need Help Choosing a Service?",
+        "subtitle": "Our patient coordinators are here to help you find the right treatment."
+      }
+    },
+    "hospitals": {
+      "title": "Partner Hospitals",
+      "subtitle": "Accredited medical facilities with international patient services",
+      "beds": "beds",
+      "established": "Est.",
+      "specialties": "Specialties",
+      "bookConsultation": "Book Consultation",
+      "viewServices": "View Services",
+      "features": {
+        "accredited": { "title": "Internationally Accredited", "description": "JCI and ISO certified hospitals" },
+        "international": { "title": "International Services", "description": "Dedicated international patient departments" },
+        "technology": { "title": "Advanced Technology", "description": "State-of-the-art medical equipment" },
+        "specialists": { "title": "Expert Specialists", "description": "Internationally trained medical professionals" }
+      },
+      "specialtyList": {
+        "cardiology": "Cardiology",
+        "oncology": "Oncology",
+        "neurology": "Neurology",
+        "orthopedics": "Orthopedics",
+        "research": "Research",
+        "transplant": "Transplant",
+        "pediatrics": "Pediatrics",
+        "tcm": "Traditional Chinese Medicine",
+        "emergency": "Emergency Care"
+      },
+      "cta": {
+        "title": "Ready to Visit Our Hospitals?",
+        "subtitle": "Schedule a virtual tour or in-person consultation today."
+      }
+    },
+    "about": {
+      "title": "About MedTravel China",
+      "subtitle": "Your trusted partner for medical travel to Guangxi, China. We bridge the gap between world-class healthcare and international patients.",
+      "mission": {
+        "title": "Our Mission",
+        "description": "We are dedicated to making premium healthcare accessible to international patients by connecting them with top medical facilities in Guangxi, China. Our comprehensive services ensure a seamless medical travel experience from start to finish.",
+        "points": [
+          "Provide access to world-class medical facilities",
+          "Offer transparent and affordable healthcare options",
+          "Deliver personalized patient care and support",
+          "Combine medical treatment with recovery tourism"
+        ]
+      },
+      "values": {
+        "title": "Our Core Values",
+        "subtitle": "The principles that guide everything we do",
+        "items": {
+          "care": { "title": "Patient-Centered Care", "description": "Your health and comfort are our top priorities." },
+          "excellence": { "title": "Medical Excellence", "description": "We partner only with accredited, top-tier hospitals." },
+          "trust": { "title": "Trust & Transparency", "description": "Honest pricing and clear communication always." },
+          "accessibility": { "title": "Global Accessibility", "description": "Making quality healthcare accessible worldwide." }
+        }
+      },
+      "whyGuangxi": {
+        "title": "Why Guangxi?",
+        "description": "Guangxi offers a unique combination of excellent healthcare facilities and stunning natural beauty. The region is home to world-famous Guilin, known for its karst mountains and the Li River, providing an ideal setting for recovery and relaxation.",
+        "highlights": [
+          { "title": "Partner Hospitals", "value": "50+" },
+          { "title": "Medical Professionals", "value": "5,000+" },
+          { "title": "International Patients Served", "value": "10,000+" },
+          { "title": "Years of Experience", "value": "15+" }
+        ]
+      },
+      "team": {
+        "title": "Meet Our Team",
+        "subtitle": "Dedicated professionals committed to your care"
+      },
+      "cta": {
+        "title": "Start Your Journey Today",
+        "subtitle": "Let us help you find the right medical solution."
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "We're here to help with your medical travel needs",
+      "info": {
+        "title": "Get in Touch",
+        "description": "Have questions about our services? Our patient coordinators are available 24/7 to assist you.",
+        "email": "Email",
+        "phone": "Phone",
+        "hours": "Working Hours",
+        "address": "Address"
+      },
+      "social": {
+        "title": "Connect With Us"
+      },
+      "form": {
+        "title": "Send Us a Message",
+        "description": "Fill out the form below and we'll get back to you within 24 hours.",
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "service": "Interested Service",
+        "selectService": "Select a service...",
+        "message": "Your Message",
+        "submit": "Send Message",
+        "success": "Thank you! Your message has been sent. We'll contact you soon."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          { "question": "How do I start the process?", "answer": "Simply fill out our contact form or give us a call. Our patient coordinator will discuss your needs and guide you through the process." },
+          { "question": "Do you provide visa assistance?", "answer": "Yes, we provide invitation letters and documentation to support your visa application for medical travel to China." },
+          { "question": "What languages do you support?", "answer": "Our team speaks English, Mandarin, and Cantonese. We also provide interpreter services for other languages upon request." },
+          { "question": "Is payment secure?", "answer": "Yes, we use secure payment methods and provide detailed invoices for all services. We also accept international insurance in some cases." }
+        ]
+      }
+    }
+  },
   "footer": {
     "description": "Your trusted partner for medical travel to Guangxi, China. We provide comprehensive healthcare services combined with memorable travel experiences.",
     "quickLinks": "Quick Links",

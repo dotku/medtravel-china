@@ -188,6 +188,136 @@
       ]
     }
   },
+  "pages": {
+    "services": {
+      "title": "医疗服务项目",
+      "subtitle": "为国际患者量身定制的世界级医疗服务",
+      "viewPricing": "查看价格",
+      "inquire": "在线咨询",
+      "process": {
+        "title": "服务流程",
+        "subtitle": "四个简单步骤开启您的健康之旅",
+        "steps": [
+          { "title": "初步咨询", "description": "告诉我们您的医疗需求，我们将为您提供个性化方案。" },
+          { "title": "治疗规划", "description": "我们的医疗团队审核您的病例并准备详细的治疗计划。" },
+          { "title": "行程安排", "description": "我们处理所有旅行事宜，包括机票、住宿和接送服务。" },
+          { "title": "治疗与康复", "description": "在我们的合作医院接受治疗，全程提供支持服务。" }
+        ]
+      },
+      "cta": {
+        "title": "需要帮助选择服务？",
+        "subtitle": "我们的患者协调员随时为您提供帮助。"
+      }
+    },
+    "hospitals": {
+      "title": "合作医院",
+      "subtitle": "提供国际患者服务的认证医疗机构",
+      "beds": "床位",
+      "established": "成立于",
+      "specialties": "专科特色",
+      "bookConsultation": "预约咨询",
+      "viewServices": "查看服务",
+      "features": {
+        "accredited": { "title": "国际认证", "description": "JCI和ISO认证医院" },
+        "international": { "title": "国际服务", "description": "专设国际患者服务部门" },
+        "technology": { "title": "先进技术", "description": "配备尖端医疗设备" },
+        "specialists": { "title": "专家团队", "description": "具有国际培训背景的医疗专家" }
+      },
+      "specialtyList": {
+        "cardiology": "心脏病学",
+        "oncology": "肿瘤学",
+        "neurology": "神经病学",
+        "orthopedics": "骨科",
+        "research": "医学研究",
+        "transplant": "器官移植",
+        "pediatrics": "儿科",
+        "tcm": "传统中医",
+        "emergency": "急诊医学"
+      },
+      "cta": {
+        "title": "想了解更多医院信息？",
+        "subtitle": "预约线上参观或现场咨询。"
+      }
+    },
+    "about": {
+      "title": "关于中国医旅",
+      "subtitle": "您值得信赖的广西医疗旅游合作伙伴。我们为国际患者搭建通往世界级医疗服务的桥梁。",
+      "mission": {
+        "title": "我们的使命",
+        "description": "我们致力于通过连接国际患者与广西顶级医疗机构，让优质医疗服务触手可及。我们的综合服务确保从开始到结束的无缝医疗旅行体验。",
+        "points": [
+          "提供世界级医疗机构的就医渠道",
+          "提供透明且实惠的医疗选择",
+          "提供个性化的患者护理和支持",
+          "将医疗治疗与康复旅游相结合"
+        ]
+      },
+      "values": {
+        "title": "核心价值观",
+        "subtitle": "指导我们一切行动的原则",
+        "items": {
+          "care": { "title": "以患者为中心", "description": "您的健康和舒适是我们的首要任务。" },
+          "excellence": { "title": "医疗卓越", "description": "我们只与认证的顶级医院合作。" },
+          "trust": { "title": "信任与透明", "description": "诚实定价，清晰沟通。" },
+          "accessibility": { "title": "全球可及", "description": "让优质医疗服务惠及全球。" }
+        }
+      },
+      "whyGuangxi": {
+        "title": "为什么选择广西？",
+        "description": "广西拥有优质的医疗设施和令人惊叹的自然美景的独特组合。该地区是世界闻名的桂林所在地，以喀斯特山脉和漓江著称，为康复和休闲提供了理想的环境。",
+        "highlights": [
+          { "title": "合作医院", "value": "50+" },
+          { "title": "医疗专家", "value": "5,000+" },
+          { "title": "服务国际患者", "value": "10,000+" },
+          { "title": "服务经验", "value": "15年+" }
+        ]
+      },
+      "team": {
+        "title": "团队介绍",
+        "subtitle": "致力于为您提供优质服务的专业团队"
+      },
+      "cta": {
+        "title": "今天开始您的健康之旅",
+        "subtitle": "让我们帮助您找到合适的医疗方案。"
+      }
+    },
+    "contact": {
+      "title": "联系我们",
+      "subtitle": "我们随时为您的医疗旅行需求提供帮助",
+      "info": {
+        "title": "联系方式",
+        "description": "对我们的服务有疑问？我们的患者协调员全天候为您服务。",
+        "email": "电子邮箱",
+        "phone": "联系电话",
+        "hours": "服务时间",
+        "address": "地址"
+      },
+      "social": {
+        "title": "社交媒体"
+      },
+      "form": {
+        "title": "发送消息",
+        "description": "填写以下表格，我们将在24小时内回复您。",
+        "name": "姓名",
+        "email": "电子邮箱",
+        "phone": "电话号码",
+        "service": "感兴趣的服务",
+        "selectService": "请选择服务...",
+        "message": "您的留言",
+        "submit": "发送消息",
+        "success": "感谢您的留言！我们会尽快与您联系。"
+      },
+      "faq": {
+        "title": "常见问题",
+        "items": [
+          { "question": "如何开始就医流程？", "answer": "只需填写我们的联系表格或致电我们。我们的患者协调员将与您讨论需求并指导您完成整个过程。" },
+          { "question": "你们提供签证协助吗？", "answer": "是的，我们提供邀请函和相关文件，以支持您的医疗旅行签证申请。" },
+          { "question": "支持哪些语言服务？", "answer": "我们的团队使用英语、普通话和粤语。如需其他语言，我们可以根据要求提供翻译服务。" },
+          { "question": "支付是否安全？", "answer": "是的，我们使用安全的支付方式，并为所有服务提供详细的发票。在某些情况下，我们还接受国际保险。" }
+        ]
+      }
+    }
+  },
   "footer": {
     "description": "您值得信赖的广西医疗旅游合作伙伴。我们提供综合医疗服务，结合难忘的旅行体验。",
     "quickLinks": "快速链接",
