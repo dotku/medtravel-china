@@ -7,19 +7,13 @@ export default function PricingPage() {
   const categories = [
     { key: "dental", icon: "🦷", color: "blue" },
     { key: "checkup", icon: "🩺", color: "green" },
-    { key: "tcm", icon: "🌿", color: "amber" },
-    { key: "cosmetic", icon: "✨", color: "pink" },
-    { key: "orthopedics", icon: "🦴", color: "purple" },
-    { key: "eye", icon: "👁️", color: "cyan" },
+    { key: "tcm", icon: "🛁", color: "amber" },
   ];
 
   const colorClasses: Record<string, { bg: string; border: string; text: string }> = {
     blue: { bg: "bg-blue-50", border: "border-blue-200", text: "text-blue-600" },
     green: { bg: "bg-green-50", border: "border-green-200", text: "text-green-600" },
     amber: { bg: "bg-amber-50", border: "border-amber-200", text: "text-amber-600" },
-    pink: { bg: "bg-pink-50", border: "border-pink-200", text: "text-pink-600" },
-    purple: { bg: "bg-purple-50", border: "border-purple-200", text: "text-purple-600" },
-    cyan: { bg: "bg-cyan-50", border: "border-cyan-200", text: "text-cyan-600" },
   };
 
   const packageItems = t.raw("pricing.packages.items") as string[];
@@ -47,7 +41,6 @@ export default function PricingPage() {
               const items = t.raw(`pricing.categories.${category.key}.items`) as Array<{
                 name: string;
                 price: string;
-                usPrice: string;
               }>;
 
               return (
@@ -70,14 +63,8 @@ export default function PricingPage() {
                           <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
                             {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Service" : "服务项目"}
                           </th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
-                            {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Our Price" : "我们的价格"}
-                          </th>
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
-                            {t("common.compareToUS")}
-                          </th>
                           <th className="px-6 py-3 text-right text-sm font-semibold text-gray-900">
-                            {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Savings" : "节省"}
+                            {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Price" : "价格"}
                           </th>
                         </tr>
                       </thead>
@@ -87,17 +74,9 @@ export default function PricingPage() {
                             <td className="px-6 py-4 text-sm text-gray-900">
                               {item.name}
                             </td>
-                            <td className="px-6 py-4">
+                            <td className="px-6 py-4 text-right">
                               <span className={`text-sm font-semibold ${colors.text}`}>
                                 {item.price}
-                              </span>
-                            </td>
-                            <td className="px-6 py-4 text-sm text-gray-500 line-through">
-                              {item.usPrice}
-                            </td>
-                            <td className="px-6 py-4 text-right">
-                              <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">
-                                60-70% OFF
                               </span>
                             </td>
                           </tr>

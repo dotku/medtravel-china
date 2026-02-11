@@ -14,33 +14,15 @@ export default function ServicesPage() {
     },
     {
       key: "healthCheckup",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80",
       icon: "🩺",
       color: "green",
     },
     {
       key: "tcm",
-      image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80",
-      icon: "🌿",
+      image: "https://images.unsplash.com/photo-1758116448135-e989799305da?auto=format&fit=crop&w=800&q=80",
+      icon: "🛁",
       color: "amber",
-    },
-    {
-      key: "cosmeticSurgery",
-      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
-      icon: "✨",
-      color: "pink",
-    },
-    {
-      key: "orthopedics",
-      image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
-      icon: "🦴",
-      color: "purple",
-    },
-    {
-      key: "eyeCare",
-      image: "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=800&q=80",
-      icon: "👁️",
-      color: "cyan",
     },
   ];
 
@@ -48,9 +30,6 @@ export default function ServicesPage() {
     blue: { bg: "bg-blue-600", text: "text-blue-600", light: "bg-blue-50" },
     green: { bg: "bg-green-600", text: "text-green-600", light: "bg-green-50" },
     amber: { bg: "bg-amber-600", text: "text-amber-600", light: "bg-amber-50" },
-    pink: { bg: "bg-pink-600", text: "text-pink-600", light: "bg-pink-50" },
-    purple: { bg: "bg-purple-600", text: "text-purple-600", light: "bg-purple-50" },
-    cyan: { bg: "bg-cyan-600", text: "text-cyan-600", light: "bg-cyan-50" },
   };
 
   return (

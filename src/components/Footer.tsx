@@ -15,6 +15,7 @@ export function Footer() {
     { href: `/${locale}/hospitals`, label: t("common.hospitals") },
     { href: `/${locale}/about`, label: t("common.about") },
     { href: `/${locale}/contact`, label: t("common.contact") },
+    { href: `/${locale}/privacy`, label: t("footer.privacy") },
   ];
 
   return (

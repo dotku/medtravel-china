@@ -88,28 +88,13 @@ export default function Home() {
     },
     {
       key: "healthCheckup",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80",
       color: "from-green-500/80 to-green-600/80",
     },
     {
       key: "tcm",
-      image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1758116448135-e989799305da?auto=format&fit=crop&w=800&q=80",
       color: "from-amber-500/80 to-amber-600/80",
-    },
-    {
-      key: "cosmeticSurgery",
-      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
-      color: "from-pink-500/80 to-pink-600/80",
-    },
-    {
-      key: "orthopedics",
-      image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
-      color: "from-purple-500/80 to-purple-600/80",
-    },
-    {
-      key: "eyeCare",
-      image: "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=800&q=80",
-      color: "from-cyan-500/80 to-cyan-600/80",
     },
   ];
 
@@ -185,9 +170,9 @@ export default function Home() {
       <section className="relative -mt-16 z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { value: "50+", labelKey: "hospitals" },
-            { value: "10,000+", labelKey: "patients" },
-            { value: "70%", labelKey: "savings" },
+            { value: "10+", labelKey: "partners" },
+            { value: "700万", labelKey: "market" },
+            { value: "3", labelKey: "services" },
             { value: "24/7", labelKey: "support" },
           ].map((stat, index) => (
             <div

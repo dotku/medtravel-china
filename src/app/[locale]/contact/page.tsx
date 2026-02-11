@@ -185,9 +185,6 @@ export default function ContactPage() {
                     <option value="dental">{t("services.dentalCare.name")}</option>
                     <option value="checkup">{t("services.healthCheckup.name")}</option>
                     <option value="tcm">{t("services.tcm.name")}</option>
-                    <option value="cosmetic">{t("services.cosmeticSurgery.name")}</option>
-                    <option value="orthopedics">{t("services.orthopedics.name")}</option>
-                    <option value="eye">{t("services.eyeCare.name")}</option>
                   </select>
                 </div>
 
