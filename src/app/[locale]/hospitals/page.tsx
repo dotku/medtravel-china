@@ -1,17 +1,30 @@
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.hospitals" });
+  return {
+    title: t("title"),
+    description: t("subtitle"),
+  };
+}
 
 export default function HospitalsPage() {
   const t = useTranslations();
 
   const hospitals = [
     {
-      key: "guilinPeople",
-      image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&q=80",
-      beds: "2000+",
-      established: "1946",
-      location: "Guilin",
+      key: "xiangya",
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+      beds: "8+",
+      established: "2018",
+      location: "Nanning",
       specialties: ["cardiology", "oncology", "neurology", "orthopedics"],
     },
     {

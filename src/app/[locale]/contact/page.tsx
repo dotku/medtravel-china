@@ -101,20 +101,17 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              {/* Social Links */}
+              {/* WeChat */}
               <div className="mt-12">
                 <h3 className="font-semibold text-gray-900">{t("pages.contact.social.title")}</h3>
-                <div className="mt-4 flex gap-4">
-                  {["wechat", "whatsapp", "facebook"].map((social) => (
-                    <button
-                      key={social}
-                      className="flex h-12 w-12 items-center justify-center rounded-lg bg-gray-100 text-gray-600 transition-colors hover:bg-emerald-100 hover:text-emerald-600"
-                    >
-                      {social === "wechat" && "微"}
-                      {social === "whatsapp" && "WA"}
-                      {social === "facebook" && "FB"}
-                    </button>
-                  ))}
+                <div className="mt-4 flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500 text-white font-bold text-sm shrink-0">
+                    微
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-500">WeChat ID</div>
+                    <div className="font-semibold text-gray-900 tracking-wide">HELENLAN998</div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -36,6 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     zh: "广西高端医疗旅游服务。体验世界一流的医疗服务，感受广西的自然之美。",
   };
 
+  const baseUrl = "https://medtravel-china.com";
+
   return {
     title: {
       default: titles[locale] || titles.en,
@@ -45,11 +48,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: locale === "zh"
       ? ["医疗旅游", "广西", "桂林", "中医", "健康体检", "牙科", "医疗服务"]
       : ["medical tourism", "Guangxi", "Guilin", "TCM", "health checkup", "dental care", "healthcare"],
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        en: `${baseUrl}/en`,
+        zh: `${baseUrl}/zh`,
+        "x-default": `${baseUrl}/en`,
+      },
+    },
     openGraph: {
       title: titles[locale] || titles.en,
       description: descriptions[locale] || descriptions.en,
       locale: locale === "zh" ? "zh_CN" : "en_US",
       type: "website",
+      url: `${baseUrl}/${locale}`,
+      siteName: locale === "zh" ? "中国医旅" : "MedTravel China",
     },
   };
 }
@@ -63,8 +76,42 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const messages = await getMessages();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    name: "MedTravel China",
+    description: "Premium medical travel services to Guangxi, China. Dental care, CT health checkups, and TCM herbal bath therapy.",
+    url: "https://medtravel-china.com",
+    telephone: "+86-773-123-4567",
+    email: "contact@medtravel-china.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "123 Medical Street",
+      addressLocality: "Guilin",
+      addressRegion: "Guangxi",
+      postalCode: "541000",
+      addressCountry: "CN",
+    },
+    medicalSpecialty: ["Dentistry", "GeneralPractice", "PhysicalMedicine"],
+    availableService: [
+      { "@type": "MedicalTherapy", "name": "Dental Care" },
+      { "@type": "MedicalTherapy", "name": "Health Checkup (CT Imaging)" },
+      { "@type": "MedicalTherapy", "name": "TCM Herbal Bath Therapy" },
+    ],
+    priceRange: "$$",
+    currenciesAccepted: "CNY, USD",
+    paymentAccepted: "Cash, Credit Card, Bank Transfer",
+    areaServed: ["Guilin", "Guangxi", "China"],
+  };
+
   return (
     <html lang={locale}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -75,6 +122,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Footer />
           </div>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );

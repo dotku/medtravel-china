@@ -11,11 +11,12 @@ export function Footer() {
 
   const quickLinks = [
     { href: `/${locale}`, label: t("common.home") },
-    { href: `/${locale}/services`, label: t("common.services") },
-    { href: `/${locale}/hospitals`, label: t("common.hospitals") },
+    { href: `/${locale}/pricing`, label: t("common.pricing") },
     { href: `/${locale}/about`, label: t("common.about") },
     { href: `/${locale}/contact`, label: t("common.contact") },
     { href: `/${locale}/privacy`, label: t("footer.privacy") },
+    { href: `/${locale}/stats`, label: t("footer.stats") },
+    { href: `/${locale}/review`, label: t("footer.review") },
   ];
 
   return (

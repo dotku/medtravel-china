@@ -1,5 +1,18 @@
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.pricing" });
+  return {
+    title: t("title"),
+    description: t("subtitle"),
+  };
+}
 
 export default function PricingPage() {
   const t = useTranslations();

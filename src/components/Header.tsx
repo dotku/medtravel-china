@@ -15,9 +15,7 @@ export function Header() {
 
   const navLinks = [
     { href: `/${locale}`, label: t("home") },
-    { href: `/${locale}/services`, label: t("services") },
     { href: `/${locale}/pricing`, label: t("pricing") },
-    { href: `/${locale}/hospitals`, label: t("hospitals") },
     { href: `/${locale}/about`, label: t("about") },
     { href: `/${locale}/contact`, label: t("contact") },
   ];

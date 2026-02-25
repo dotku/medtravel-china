@@ -86,37 +86,6 @@ export default function Home() {
       image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
       color: "from-blue-500/80 to-blue-600/80",
     },
-    {
-      key: "healthCheckup",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80",
-      color: "from-green-500/80 to-green-600/80",
-    },
-    {
-      key: "tcm",
-      image: "https://images.unsplash.com/photo-1758116448135-e989799305da?auto=format&fit=crop&w=800&q=80",
-      color: "from-amber-500/80 to-amber-600/80",
-    },
-  ];
-
-  const hospitals = [
-    {
-      key: "guilinPeople",
-      image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&q=80",
-      beds: "2000+",
-      established: "1946",
-    },
-    {
-      key: "guangxiMedical",
-      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
-      beds: "3000+",
-      established: "1934",
-    },
-    {
-      key: "nanningFirst",
-      image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80",
-      beds: "1800+",
-      established: "1914",
-    },
   ];
 
   return (
@@ -125,19 +94,19 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=1920&q=80"
-            alt="Guilin karst mountains"
+            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80"
+            alt="Dental clinic Nanning"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/92 via-gray-900/75 to-gray-900/30" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-4 py-1 text-sm font-medium text-emerald-400 ring-1 ring-inset ring-emerald-500/20">
-              {t("home.location")}
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-4 py-1 text-sm font-medium text-emerald-400 ring-1 ring-inset ring-emerald-500/20">
+              🦷 Guangxi Dental Tourism · Nanning
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               {t("home.hero.title")}
@@ -145,7 +114,30 @@ export default function Home() {
             <p className="mt-6 text-lg leading-relaxed text-gray-300">
               {t("home.hero.subtitle")}
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+
+            {/* Trust indicators */}
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-300">
+              <span className="flex items-center gap-1.5">
+                <svg className="h-4 w-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Swiss ITI · US Zirconia · Korean Osstem
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="h-4 w-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                German Kavo 3D CBCT Imaging
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="h-4 w-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Gov&apos;t Licensed · EU/US Protocols
+              </span>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="#services"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-4 text-sm font-semibold text-white shadow-lg transition-all hover:bg-emerald-400 hover:shadow-emerald-500/25"
@@ -156,10 +148,10 @@ export default function Home() {
                 </svg>
               </Link>
               <Link
-                href="#hospitals"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur transition-all hover:bg-white/20"
               >
-                {t("common.viewAll")} {t("common.hospitals")}
+                {t("common.getQuote")}
               </Link>
             </div>
           </div>
@@ -170,9 +162,9 @@ export default function Home() {
       <section className="relative -mt-16 z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { value: "10+", labelKey: "partners" },
-            { value: "700万", labelKey: "market" },
-            { value: "3", labelKey: "services" },
+            { value: "300+", labelKey: "clinics" },
+            { value: "700万+", labelKey: "tourists" },
+            { value: "60%+", labelKey: "services" },
             { value: "24/7", labelKey: "support" },
           ].map((stat, index) => (
             <div
@@ -226,7 +218,7 @@ export default function Home() {
               {t("home.featuredServices.subtitle")}
             </p>
           </div>
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 max-w-lg mx-auto">
             {services.map((service) => (
               <div
                 key={service.key}
@@ -316,59 +308,6 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partner Hospitals Section */}
-      <section id="hospitals" className="bg-white py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              {t("home.featuredHospitals.title")}
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              {t("home.featuredHospitals.subtitle")}
-            </p>
-          </div>
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {hospitals.map((hospital) => (
-              <div
-                key={hospital.key}
-                className="group overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all hover:border-emerald-200 hover:shadow-xl"
-              >
-                <div className="relative h-56 overflow-hidden">
-                  <Image
-                    src={hospital.image}
-                    alt={t(`hospitals.${hospital.key}.name`)}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="flex gap-2">
-                      <span className="rounded-full bg-emerald-500 px-3 py-1 text-xs font-medium text-white">
-                        {hospital.beds} beds
-                      </span>
-                      <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900">
-                        Est. {hospital.established}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {t(`hospitals.${hospital.key}.name`)}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-600">
-                    {t(`hospitals.${hospital.key}.description`)}
-                  </p>
-                  <button className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-emerald-50 px-4 py-2.5 text-sm font-medium text-emerald-600 transition-colors hover:bg-emerald-100">
-                    {t("common.learnMore")}
-                  </button>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

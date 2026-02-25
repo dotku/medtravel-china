@@ -16,131 +16,132 @@
   },
   "home": {
     "hero": {
-      "title": "Premium Medical Travel to Guangxi, China",
-      "subtitle": "Experience world-class healthcare combined with the natural beauty of Guangxi. From traditional Chinese medicine to modern treatments, we provide comprehensive medical travel services.",
-      "cta": "Explore Services"
+      "title": "Dental Implants in Guangxi, China — Save 60–70%",
+      "subtitle": "Nanning is Guangxi's dental tourism hub — 300+ licensed clinics, EU/US standards, Swiss ITI · All-on-4 systems. All-inclusive 4-week packages from $7,800, combining top dental care with scenic Guangxi recovery tours.",
+      "cta": "Explore Packages"
     },
     "whyChooseUs": {
-      "title": "Why Choose Guangxi for Medical Travel",
+      "title": "Why Choose Guangxi for Dental Tourism?",
       "quality": {
-        "title": "World-Class Healthcare",
-        "description": "Access to top-rated hospitals with internationally trained doctors and cutting-edge medical technology."
+        "title": "300+ Dental Clinics in Nanning",
+        "description": "Nanning is a fully developed dental tourism hub. 300+ licensed clinics operate to EU/US protocols with German 3D CBCT imaging and internationally certified implant systems — world-class care at local prices."
       },
       "cost": {
-        "title": "Affordable Excellence",
-        "description": "Receive premium medical care at a fraction of the cost compared to Western countries."
+        "title": "Save 60–70% vs. North America",
+        "description": "A single implant that costs $3,000–$6,000 in the US starts from $650 in Nanning. All-on-4 full-mouth from $12,000 vs. $30,000+ abroad. Same brands, same standards — a fraction of the cost."
       },
       "tcm": {
-        "title": "Traditional Chinese Medicine",
-        "description": "Experience authentic TCM treatments in the birthplace of many herbal remedies."
+        "title": "Guangxi Wellness & Recovery Culture",
+        "description": "Guangxi is China's premier wellness destination. Recover post-surgery with herbal baths in Bama Longevity Valley, scenic cruises on the Li River, and immersion in Zhuang culture — nature as medicine."
       },
       "tourism": {
-        "title": "Recovery & Tourism",
-        "description": "Recover in beautiful Guilin, surrounded by stunning karst mountains and the Li River."
+        "title": "Scenic Recovery Tour Included",
+        "description": "Spend recovery weeks in Guangxi's UNESCO-class landscapes — Detian Transnational Waterfall, Bama Longevity Valley, and Guilin karst mountains. Healing is better surrounded by beauty."
       }
     },
     "featuredServices": {
-      "title": "Featured Medical Services",
-      "subtitle": "Comprehensive healthcare solutions tailored for international patients"
+      "title": "Dental Implants in Nanning",
+      "subtitle": "Premium dental care from Guangxi's top-rated clinics, combined with a scenic Guangxi recovery tour"
     },
     "featuredHospitals": {
-      "title": "Partner Hospitals",
-      "subtitle": "Accredited medical facilities with English-speaking staff"
+      "title": "Our Partner Clinic",
+      "subtitle": "Nanning's premier dental implant center — approved by the National Health Commission"
     },
     "stats": {
       "partners": "Partner Institutions",
       "market": "Travel Market Coverage",
-      "services": "Medical Services",
-      "support": "Support"
+      "services": "Savings vs. US Prices",
+      "support": "Support",
+      "clinics": "Dental Clinics in Nanning",
+      "tourists": "Annual Nanning Visitors"
     },
     "recovery": {
-      "title": "Recover in Paradise",
-      "description": "Guilin is famous for its stunning karst mountain scenery along the Li River. After your medical treatment, enjoy a peaceful recovery surrounded by one of China's most beautiful natural landscapes.",
+      "title": "4 Weeks in Guangxi — Heal & Explore",
+      "description": "Your 4-week package is designed around your recovery timeline. Week 1 is your implant procedure. Weeks 2–4 let you relax, tour, and recover in one of China's most scenic provinces.",
       "items": [
-        "Li River cruise through karst mountains",
-        "Yangshuo countryside cycling tours",
-        "Traditional rice terrace visits",
-        "Hot spring resorts for relaxation"
+        "Detian Transnational Waterfall & Tongling Grand Canyon",
+        "Bama Longevity Valley — 10-session herbal bath therapy",
+        "Guilin karst mountains & Li River cruise",
+        "Sanjianhai Lake boat tour & Yao ethnic culture"
       ]
     },
     "cta": {
-      "title": "Ready to Start Your Medical Journey?",
-      "subtitle": "Contact us today for a free consultation and personalized treatment plan"
+      "title": "Get a Free Implant Consultation",
+      "subtitle": "Tell us your dental needs — we'll prepare a full cost breakdown and itinerary within 24 hours"
     },
     "location": "Guangxi, China"
   },
   "services": {
     "dentalCare": {
-      "name": "Dental Care",
-      "description": "Comprehensive dental services including implants, veneers, and orthodontics."
+      "name": "Dental Implants",
+      "description": "Single implants, All-on-4, and full-mouth reconstruction at Nanning Xiangya Dental — using Swiss ITI, US Zirconia, and Korean Osstem systems with German 3D CBCT imaging."
     },
     "healthCheckup": {
-      "name": "Health Checkup",
-      "description": "Comprehensive health screenings featuring advanced CT imaging and full-body diagnostic examinations."
+      "name": "Pre-Op CT Checkup",
+      "description": "Full 3D CBCT scan and dental health assessment before your procedure. Identifies bone density, nerve position, and sinus proximity to ensure safe implant placement."
     },
     "tcm": {
-      "name": "TCM Herbal Bath",
-      "description": "Traditional Chinese medicine herbal bath therapy for relaxation, detoxification, and holistic wellness."
+      "name": "TCM Herbal Bath Recovery",
+      "description": "Bama-style medicinal herbal soaking therapy to reduce post-surgical inflammation, improve circulation, and speed up implant osseointegration during your recovery weeks."
     }
   },
   "hospitals": {
-    "guilinPeople": {
-      "name": "Guilin People's Hospital",
-      "description": "A Grade-A tertiary hospital with over 2000 beds and comprehensive medical services."
+    "xiangya": {
+      "name": "Nanning Xiangya Dental Clinic",
+      "description": "Approved by China's National Health Commission, Xiangya Dental is Nanning's premier implant center. Located in Qingxiu Wanda Plaza, with ~500 sqm of dedicated treatment space and multiple private surgical suites."
     },
     "guangxiMedical": {
       "name": "Guangxi Medical University First Affiliated Hospital",
-      "description": "Leading teaching hospital with advanced research facilities and international patient services."
+      "description": "Top-tier teaching hospital providing pre-op bloodwork, anesthesia consultation, and emergency backup support for our international dental patients."
     },
     "nanningFirst": {
       "name": "The First People's Hospital of Nanning",
-      "description": "Modern hospital with specialized centers for cardiology, oncology, and neurology."
+      "description": "Comprehensive tertiary hospital available for additional health screenings, CT imaging, and specialist referrals during your stay."
     }
   },
   "pricing": {
-    "title": "Medical Service Pricing",
-    "subtitle": "Transparent pricing for quality healthcare.",
-    "disclaimer": "Prices are estimates and may vary based on individual conditions. Contact us for a personalized quote.",
+    "title": "All-Inclusive Medical Travel Packages",
+    "subtitle": "Everything covered — except your international flight.",
+    "disclaimer": "Prices cover the complete 4-week package: procedure, hotel, meals, transport, tour, and TCM recovery. Contact us for a personalized quote.",
     "categories": {
       "dental": {
-        "name": "Dental Care",
+        "name": "4-Week All-Inclusive Packages",
         "items": [
-          { "name": "Dental Implant (per tooth)", "price": "$800 - $1,500" },
-          { "name": "Porcelain Veneer (per tooth)", "price": "$200 - $400" },
-          { "name": "Root Canal Treatment", "price": "$150 - $300" },
-          { "name": "Teeth Whitening", "price": "$100 - $200" },
-          { "name": "Orthodontics (Full Treatment)", "price": "$1,500 - $3,000" }
+          { "name": "Single Implant — 4-Week Package", "price": "From $7,800" },
+          { "name": "Half-Mouth All-on-4 — 4-Week Package", "price": "From $16,800" },
+          { "name": "Full-Mouth All-on-4 — 4-Week Package", "price": "From $24,800" }
         ]
       },
       "checkup": {
-        "name": "Health Checkup",
+        "name": "7–10 Day Express Packages",
         "items": [
-          { "name": "Basic Health Screening", "price": "$150 - $250" },
-          { "name": "Comprehensive Health Checkup", "price": "$400 - $600" },
-          { "name": "Executive Health Package", "price": "$800 - $1,200" },
-          { "name": "Cancer Screening Package", "price": "$500 - $800" }
+          { "name": "Single Implant — 7-Day Express", "price": "From $4,200" },
+          { "name": "Half-Mouth All-on-4 — 10-Day Express", "price": "From $10,500" },
+          { "name": "Full-Mouth All-on-4 — 10-Day Express", "price": "From $16,800" }
         ]
       },
       "tcm": {
-        "name": "TCM Herbal Bath",
+        "name": "Add-Ons (available with any package)",
         "items": [
-          { "name": "Single Herbal Bath Session", "price": "$30 - $60" },
-          { "name": "Herbal Bath + Massage Package", "price": "$50 - $90" },
-          { "name": "TCM Herbal Bath Wellness Package (7 days)", "price": "$300 - $500" }
+          { "name": "TCM Herbal Bath 10-Session Course", "price": "Included in 4-week packages" },
+          { "name": "Private Photography Tour", "price": "From $300" },
+          { "name": "Extended Hotel Stay (per night)", "price": "From $80" }
         ]
       }
     },
     "packages": {
-      "title": "All-Inclusive Medical Travel Packages",
-      "subtitle": "Stress-free medical travel with everything arranged for you",
+      "title": "What's Included in Every Package",
+      "subtitle": "All-inclusive except international airfare — everything else is handled",
       "includes": "Package Includes",
       "items": [
-        "Airport pickup and transfers",
-        "Hotel accommodation",
-        "Medical procedure costs",
-        "Interpreter services",
-        "Post-treatment care",
-        "Local SIM card",
+        "Airport pickup and all in-country transfers",
+        "28 nights hotel accommodation",
+        "Daily meals (3 per day)",
+        "Full implant procedure at Xiangya Dental",
+        "3D CBCT pre-op imaging & post-op checkups",
+        "5-day Guangxi scenic tour (Detian, Guilin, Bama)",
+        "10 TCM herbal bath sessions",
+        "Dedicated English-speaking patient coordinator",
         "24/7 support hotline"
       ]
     }
@@ -167,75 +168,75 @@
       }
     },
     "hospitals": {
-      "title": "Partner Hospitals",
-      "subtitle": "Accredited medical facilities with international patient services",
-      "beds": "beds",
+      "title": "Our Partner Clinics",
+      "subtitle": "Xiangya Dental Clinic — Nanning's leading implant center, operating to EU/US standards",
+      "beds": "treatment rooms",
       "established": "Est.",
       "specialties": "Specialties",
       "bookConsultation": "Book Consultation",
       "viewServices": "View Services",
       "features": {
-        "accredited": { "title": "Internationally Accredited", "description": "JCI and ISO certified hospitals" },
-        "international": { "title": "International Services", "description": "Dedicated international patient departments" },
-        "technology": { "title": "Advanced Technology", "description": "State-of-the-art medical equipment" },
-        "specialists": { "title": "Expert Specialists", "description": "Internationally trained medical professionals" }
+        "accredited": { "title": "Gov't Approved", "description": "Licensed by China's National Health Commission" },
+        "international": { "title": "EU/US Standards", "description": "German 4-hand technique, European sterilization protocols" },
+        "technology": { "title": "3D CBCT Imaging", "description": "German Kavo Cranex3D — the same system used in top US/EU dental centers" },
+        "specialists": { "title": "Expert Implantologists", "description": "Led by Dr. Shi Weizhong, former chief of Guangxi Worker's Hospital Dental Dept." }
       },
       "specialtyList": {
-        "cardiology": "Cardiology",
-        "oncology": "Oncology",
-        "neurology": "Neurology",
-        "orthopedics": "Orthopedics",
-        "research": "Research",
-        "transplant": "Transplant",
-        "pediatrics": "Pediatrics",
+        "cardiology": "Dental Implants",
+        "oncology": "All-on-4 / Full-Mouth Reconstruction",
+        "neurology": "Orthodontics",
+        "orthopedics": "Prosthodontics",
+        "research": "Oral Surgery",
+        "transplant": "Pediatric Dentistry",
+        "pediatrics": "Teeth Whitening",
         "tcm": "Traditional Chinese Medicine",
-        "emergency": "Emergency Care"
+        "emergency": "Emergency Dental Care"
       },
       "cta": {
-        "title": "Ready to Visit Our Hospitals?",
-        "subtitle": "Schedule a virtual tour or in-person consultation today."
+        "title": "Ready to Meet Our Team?",
+        "subtitle": "Schedule a free virtual consultation with Dr. Shi's team — we'll review your X-rays and provide a full cost estimate."
       }
     },
     "about": {
       "title": "About MedTravel China",
-      "subtitle": "Your trusted partner for medical travel to Guangxi, China. We bridge the gap between world-class healthcare and international patients.",
+      "subtitle": "We are JYTech LLC (US-based), specializing in premium dental implant travel packages for North American patients seeking world-class care at a fraction of the cost.",
       "mission": {
         "title": "Our Mission",
-        "description": "We are dedicated to making premium healthcare accessible to international patients by connecting them with top medical facilities in Guangxi, China. Our comprehensive services ensure a seamless medical travel experience from start to finish.",
+        "description": "We connect North American patients with Nanning Xiangya Dental Clinic — one of Guangxi's most advanced implant centers — and wrap the experience in a full 4-week recovery tour across Guangxi's natural wonders. You get the dental work done right, and come home having experienced something unforgettable.",
         "points": [
-          "Provide access to world-class medical facilities",
-          "Offer transparent and affordable healthcare options",
-          "Deliver personalized patient care and support",
-          "Combine medical treatment with recovery tourism"
+          "Partner with China's best dental clinics, not just the cheapest",
+          "Build complete packages so patients never have to figure out logistics alone",
+          "Combine post-op recovery with authentic Guangxi travel",
+          "Protect patients with transparent pricing and clear contracts"
         ]
       },
       "values": {
         "title": "Our Core Values",
         "subtitle": "The principles that guide everything we do",
         "items": {
-          "care": { "title": "Patient-Centered Care", "description": "Your health and comfort are our top priorities." },
-          "excellence": { "title": "Medical Excellence", "description": "We partner only with accredited, top-tier hospitals." },
-          "trust": { "title": "Trust & Transparency", "description": "Honest pricing and clear communication always." },
-          "accessibility": { "title": "Global Accessibility", "description": "Making quality healthcare accessible worldwide." }
+          "care": { "title": "Patient-First", "description": "All decisions — clinic selection, itinerary, pricing — center on patient safety and comfort." },
+          "excellence": { "title": "Clinical Excellence", "description": "Xiangya Dental uses the same implant systems and protocols as top US and European clinics." },
+          "trust": { "title": "Full Transparency", "description": "Itemized pricing, written contracts, and no hidden fees. You know exactly what you're paying for." },
+          "accessibility": { "title": "Accessible Pricing", "description": "Save 60–70% vs. North American rates without compromising on quality of care." }
         }
       },
       "whyGuangxi": {
-        "title": "Why Guangxi?",
-        "description": "Guangxi offers a unique combination of excellent healthcare facilities and stunning natural beauty. The region is home to world-famous Guilin, known for its karst mountains and the Li River, providing an ideal setting for recovery and relaxation.",
+        "title": "Why Nanning & Guangxi?",
+        "description": "Nanning is Guangxi's capital — a modern, international city with excellent hospitals and direct flights from major hubs. After surgery, Guangxi offers some of China's most spectacular scenery: the Detian waterfall, Bama longevity valley, Guilin karst mountains, and more — all within a 4-hour drive.",
         "highlights": [
           { "title": "Partner Institutions", "value": "10+" },
-          { "title": "Travel Market Coverage", "value": "7M+" },
-          { "title": "Medical Services", "value": "3" },
-          { "title": "Years of Experience", "value": "15+" }
+          { "title": "Travel Market", "value": "7M+" },
+          { "title": "Core Services", "value": "3" },
+          { "title": "Savings vs. US", "value": "60–70%" }
         ]
       },
       "team": {
-        "title": "Meet Our Team",
-        "subtitle": "Dedicated professionals committed to your care"
+        "title": "Our Team & Partners",
+        "subtitle": "JYTech LLC (US operations) + Xiangya Dental (Nanning clinical team)"
       },
       "cta": {
-        "title": "Start Your Journey Today",
-        "subtitle": "Let us help you find the right medical solution."
+        "title": "Ready for Your Consultation?",
+        "subtitle": "Send us your dental X-rays or describe your situation — we'll respond within 24 hours with a full plan and quote."
       }
     },
     "privacy": {
@@ -337,6 +338,10 @@
         }
       }
     },
+    "pricing": {
+      "title": "All-Inclusive Dental Implant Packages",
+      "subtitle": "Everything covered — except your international flight."
+    },
     "contact": {
       "title": "Contact Us",
       "subtitle": "We're here to help with your medical travel needs",
@@ -366,20 +371,97 @@
       "faq": {
         "title": "Frequently Asked Questions",
         "items": [
-          { "question": "How do I start the process?", "answer": "Simply fill out our contact form or give us a call. Our patient coordinator will discuss your needs and guide you through the process." },
-          { "question": "Do you provide visa assistance?", "answer": "Yes, we provide invitation letters and documentation to support your visa application for medical travel to China." },
-          { "question": "What languages do you support?", "answer": "Our team speaks English, Mandarin, and Cantonese. We also provide interpreter services for other languages upon request." },
-          { "question": "Is payment secure?", "answer": "Yes, we use secure payment methods and provide detailed invoices for all services. We also accept international insurance in some cases." }
+          { "question": "Am I a good candidate for dental implants?", "answer": "Most adults with good general health qualify. We ask you to send us a recent panoramic X-ray or CBCT scan (or we'll arrange one on arrival). Our Xiangya team will assess bone density, gum health, and sinus proximity before confirming a treatment plan." },
+          { "question": "How long do I need to stay in China?", "answer": "Our standard package is 4 weeks. Week 1 is for surgery and initial healing. Weeks 2–4 you'll tour Guangxi and do your herbal bath recovery sessions, returning for a check-up before you fly home. Same-day or 2-stage implants can be discussed for shorter stays." },
+          { "question": "What implant brands do you use?", "answer": "Xiangya Dental offers Swiss ITI (Straumann), US Zirconia ET, and Korean Osstem systems — all internationally recognized brands used in US and EU clinics. Brand and material choice affects cost and is discussed during your consultation." },
+          { "question": "Do you provide visa assistance?", "answer": "Yes. We provide a formal invitation letter from Xiangya Dental Clinic to support your medical visa application, plus guidance on the application process from our US team." },
+          { "question": "Is payment secure?", "answer": "All payments are made to JYTech LLC, our US-registered company. We provide itemized invoices and a written service agreement before you pay anything. We do not collect payments through third-party travel agents." }
         ]
+      }
+    },
+    "stats": {
+      "hero": {
+        "title": "Business Analytics",
+        "subtitle": "Our growth, shared openly with our partners"
+      },
+      "metrics": {
+        "title": "Key Business Metrics",
+        "items": [
+          { "label": "Partner Institutions", "value": "10+", "desc": "Medical & travel partners across Guangxi" },
+          { "label": "Travel Market Coverage", "value": "7M+", "desc": "Potential travelers in our target market" },
+          { "label": "Medical Services", "value": "3", "desc": "Focused specialty services offered" },
+          { "label": "Support", "value": "24/7", "desc": "Patient coordinator availability" }
+        ]
+      },
+      "traffic": {
+        "title": "Traffic & Conversions",
+        "subtitle": "Representative website performance metrics",
+        "items": [
+          { "label": "Monthly Visitors", "value": "2,400+", "desc": "Unique website visitors per month", "trend": "+18% MoM" },
+          { "label": "Avg. Session Duration", "value": "3m 42s", "desc": "Average time spent on site", "trend": "+6% MoM" },
+          { "label": "Inquiry Rate", "value": "4.8%", "desc": "Visitors who submit a contact form", "trend": "+1.2pp MoM" },
+          { "label": "Consult Conversion", "value": "68%", "desc": "Inquiries that convert to consultations", "trend": "+5% MoM" }
+        ]
+      },
+      "topServices": {
+        "title": "Top Services by Interest",
+        "items": [
+          { "name": "Dental Care", "share": "45%", "bar": 45 },
+          { "name": "Health Checkup (CT)", "share": "32%", "bar": 32 },
+          { "name": "TCM Herbal Bath", "share": "23%", "bar": 23 }
+        ]
+      },
+      "analytics": {
+        "title": "Real-Time Analytics",
+        "description": "Detailed real-time analytics including page views, traffic sources, and user behavior are available on the Vercel Analytics dashboard.",
+        "cta": "View Vercel Dashboard",
+        "note": "Access requires Vercel project membership. Contact the tech team for access."
       }
     }
   },
+  "review": {
+    "hero": {
+      "title": "Share Your Experience",
+      "subtitle": "Your honest feedback helps other travelers make informed decisions and supports our mission to provide world-class medical care."
+    },
+    "intro": "Had a great experience with MedTravel China? We'd love to hear from you. Please take a moment to share your feedback on one of the platforms below.",
+    "platforms": [
+      {
+        "id": "google",
+        "name": "Google Maps",
+        "audience": "Best for international visitors",
+        "description": "Leave a review on Google Maps to help global travelers discover our services.",
+        "cta": "Review on Google",
+        "color": "blue"
+      },
+      {
+        "id": "tripadvisor",
+        "name": "TripAdvisor",
+        "audience": "Popular with medical tourists",
+        "description": "Share your medical travel experience on TripAdvisor to guide future patients.",
+        "cta": "Review on TripAdvisor",
+        "color": "green"
+      },
+      {
+        "id": "xiaohongshu",
+        "name": "小红书 / WeChat",
+        "audience": "For Chinese-speaking travelers",
+        "description": "Share your story on Xiaohongshu or WeChat to help domestic travelers plan their trip.",
+        "cta": "Share on 小红书",
+        "color": "red"
+      }
+    ],
+    "note": "All reviews should reflect your genuine experience. We appreciate honest, constructive feedback.",
+    "thankYou": "Thank you for helping us grow!"
+  },
   "footer": {
-    "description": "Your trusted partner for medical travel to Guangxi, China. We provide comprehensive healthcare services combined with memorable travel experiences.",
+    "description": "JYTech LLC — Premium dental implant travel packages to Nanning, China. Save 60–70% vs. US prices. All-inclusive 4-week packages from $7,800.",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "followUs": "Follow Us",
     "privacy": "Privacy Policy",
+    "stats": "Stats",
+    "review": "Leave a Review",
     "rights": "All rights reserved."
   }
 }
