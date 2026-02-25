@@ -28,7 +28,7 @@
       },
       "cost": {
         "title": "Save 60–70% vs. North America",
-        "description": "A single implant that costs $3,000–$6,000 in the US starts from $650 in Nanning. All-on-4 full-mouth from $12,000 vs. $30,000+ abroad. Same brands, same standards — a fraction of the cost."
+        "description": "A single implant that costs $3,000–$6,000 in the US is typically $900–$1,400 total in Nanning. All-on-4 full-mouth from $12,000 vs. $30,000+ abroad. Same brands, same standards — at a significantly lower cost."
       },
       "tcm": {
         "title": "Guangxi Wellness & Recovery Culture",
@@ -113,11 +113,11 @@
         ]
       },
       "checkup": {
-        "name": "7–10 Day Express Packages",
+        "name": "Approx. 3-Week Treatment Packages",
         "items": [
-          { "name": "Single Implant — 7-Day Express", "price": "From $4,200" },
-          { "name": "Half-Mouth All-on-4 — 10-Day Express", "price": "From $10,500" },
-          { "name": "Full-Mouth All-on-4 — 10-Day Express", "price": "From $16,800" }
+          { "name": "Single Implant — Approx. 3 Weeks", "price": "From $4,200" },
+          { "name": "Half-Mouth All-on-4 — Approx. 3 Weeks", "price": "From $10,500" },
+          { "name": "Full-Mouth All-on-4 — Approx. 3 Weeks", "price": "From $16,800" }
         ]
       },
       "tcm": {
@@ -199,7 +199,7 @@
     },
     "about": {
       "title": "About MedTravel China",
-      "subtitle": "We are JYTech LLC (US-based), specializing in premium dental implant travel packages for North American patients seeking world-class care at a fraction of the cost.",
+      "subtitle": "MedTravel China specializes in premium dental implant travel packages for North American patients seeking world-class care at a fraction of the cost.",
       "mission": {
         "title": "Our Mission",
         "description": "We connect North American patients with Nanning Xiangya Dental Clinic — one of Guangxi's most advanced implant centers — and wrap the experience in a full 4-week recovery tour across Guangxi's natural wonders. You get the dental work done right, and come home having experienced something unforgettable.",
@@ -232,7 +232,7 @@
       },
       "team": {
         "title": "Our Team & Partners",
-        "subtitle": "JYTech LLC (US operations) + Xiangya Dental (Nanning clinical team)"
+        "subtitle": "MedTravel China (service team) + Xiangya Dental (Nanning clinical team)"
       },
       "cta": {
         "title": "Ready for Your Consultation?",
@@ -375,7 +375,7 @@
           { "question": "How long do I need to stay in China?", "answer": "Our standard package is 4 weeks. Week 1 is for surgery and initial healing. Weeks 2–4 you'll tour Guangxi and do your herbal bath recovery sessions, returning for a check-up before you fly home. Same-day or 2-stage implants can be discussed for shorter stays." },
           { "question": "What implant brands do you use?", "answer": "Xiangya Dental offers Swiss ITI (Straumann), US Zirconia ET, and Korean Osstem systems — all internationally recognized brands used in US and EU clinics. Brand and material choice affects cost and is discussed during your consultation." },
           { "question": "Do you provide visa assistance?", "answer": "Yes. We provide a formal invitation letter from Xiangya Dental Clinic to support your medical visa application, plus guidance on the application process from our US team." },
-          { "question": "Is payment secure?", "answer": "All payments are made to JYTech LLC, our US-registered company. We provide itemized invoices and a written service agreement before you pay anything. We do not collect payments through third-party travel agents." }
+          { "question": "Is payment secure?", "answer": "All payments are made to the designated receiving account stated in your written service agreement. We provide itemized invoices and a written service agreement before you pay anything. We do not collect payments through third-party travel agents." }
         ]
       }
     },
@@ -455,7 +455,8 @@
     "thankYou": "Thank you for helping us grow!"
   },
   "footer": {
-    "description": "JYTech LLC — Premium dental implant travel packages to Nanning, China. Save 60–70% vs. US prices. All-inclusive 4-week packages from $7,800.",
+    "description": "MedTravel China — Premium dental implant travel packages to Nanning, China. Save 60–70% vs. US prices. All-inclusive 4-week packages from $7,800.",
+    "techSupplier": "Technical support for this site is provided by JY Tech LLC (Jieyuan Technology).",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "followUs": "Follow Us",

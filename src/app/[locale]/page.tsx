@@ -83,7 +83,8 @@ export default function Home() {
   const services = [
     {
       key: "dentalCare",
-      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+      image:
+        "https://images.pexels.com/photos/4269369/pexels-photo-4269369.jpeg?auto=compress&cs=tinysrgb&w=1200",
       color: "from-blue-500/80 to-blue-600/80",
     },
   ];
@@ -94,8 +95,8 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80"
-            alt="Dental clinic Nanning"
+            src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt="Friendly dentist consultation in clinic"
             fill
             className="object-cover"
             priority
@@ -118,20 +119,50 @@ export default function Home() {
             {/* Trust indicators */}
             <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-300">
               <span className="flex items-center gap-1.5">
-                <svg className="h-4 w-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="h-4 w-4 text-emerald-400 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 Swiss ITI · US Zirconia · Korean Osstem
               </span>
               <span className="flex items-center gap-1.5">
-                <svg className="h-4 w-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="h-4 w-4 text-emerald-400 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 German Kavo 3D CBCT Imaging
               </span>
               <span className="flex items-center gap-1.5">
-                <svg className="h-4 w-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="h-4 w-4 text-emerald-400 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 Gov&apos;t Licensed · EU/US Protocols
               </span>
@@ -143,8 +174,18 @@ export default function Home() {
                 className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-4 text-sm font-semibold text-white shadow-lg transition-all hover:bg-emerald-400 hover:shadow-emerald-500/25"
               >
                 {t("home.hero.cta")}
-                <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                <svg
+                  className="ml-2 h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
                 </svg>
               </Link>
               <Link
@@ -171,8 +212,12 @@ export default function Home() {
               key={index}
               className="rounded-2xl bg-white p-6 text-center shadow-xl"
             >
-              <div className="text-3xl font-bold text-emerald-600">{stat.value}</div>
-              <div className="mt-1 text-sm text-gray-600">{t(`home.stats.${stat.labelKey}`)}</div>
+              <div className="text-3xl font-bold text-emerald-600">
+                {stat.value}
+              </div>
+              <div className="mt-1 text-sm text-gray-600">
+                {t(`home.stats.${stat.labelKey}`)}
+              </div>
             </div>
           ))}
         </div>
@@ -231,7 +276,9 @@ export default function Home() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${service.color}`} />
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-t ${service.color}`}
+                  />
                   <div className="absolute bottom-4 left-4">
                     <span className="rounded-full bg-white/90 px-4 py-1.5 text-sm font-medium text-gray-900 backdrop-blur">
                       {t(`services.${service.key}.name`)}
@@ -288,14 +335,29 @@ export default function Home() {
                 {t("home.recovery.description")}
               </p>
               <ul className="mt-8 space-y-4">
-                {(t.raw("home.recovery.items") as string[]).map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-gray-300">
-                    <svg className="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
+                {(t.raw("home.recovery.items") as string[]).map(
+                  (item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center gap-3 text-gray-300"
+                    >
+                      <svg
+                        className="h-5 w-5 text-emerald-400"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      {item}
+                    </li>
+                  ),
+                )}
               </ul>
             </div>
             <div className="relative hidden lg:block">

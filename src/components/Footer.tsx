@@ -34,6 +34,9 @@ export function Footer() {
             <p className="mt-4 max-w-md text-sm leading-relaxed">
               {t("footer.description")}
             </p>
+            <p className="mt-2 max-w-md text-sm text-gray-400">
+              {t("footer.techSupplier")}
+            </p>
           </div>
 
           {/* Quick Links */}
