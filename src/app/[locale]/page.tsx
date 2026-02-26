@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
+import { SALES_CTA_URL } from "@/lib/sales-cta";
 
 export default function Home() {
   const t = useTranslations();
@@ -189,7 +190,9 @@ export default function Home() {
                 </svg>
               </Link>
               <Link
-                href="/contact"
+                href={SALES_CTA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur transition-all hover:bg-white/20"
               >
                 {t("common.getQuote")}
@@ -343,7 +346,6 @@ export default function Home() {
                     >
                       <svg
                         className="h-5 w-5 text-emerald-400"
-                        fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="2"
                         stroke="currentColor"
@@ -386,7 +388,9 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
-              href="/contact"
+              href={SALES_CTA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-emerald-600 shadow-lg transition-all hover:bg-emerald-50 hover:shadow-xl"
             >
               {t("common.contact")}

@@ -14,7 +14,8 @@
     "included": "已包含",
     "getQuote": "获取报价",
     "login": "登录",
-    "logout": "退出"
+    "logout": "退出",
+    "orders": "我的订单"
   },
   "home": {
     "hero": {
@@ -102,6 +103,10 @@
     }
   },
   "pricing": {
+    "bookNow": "立即预订",
+    "loginToBook": "登录后预订",
+    "booking": "处理中...",
+    "bookSalesCall": "预约销售咨询",
     "title": "医疗旅游全包套餐",
     "subtitle": "除国际机票外，其余一切费用全部包含。",
     "disclaimer": "套餐价格含3周全程：手术、酒店、餐饮、交通、景区游览及中医药浴康复。如需个性化报价请联系我们。",
@@ -375,6 +380,19 @@
         ]
       }
     },
+    "orders": {
+      "title": "我的订单",
+      "subtitle": "查看您近期的预订与支付记录。",
+      "empty": "您还没有订单记录。",
+      "goPricing": "查看套餐",
+      "noEmail": "当前账号未绑定邮箱，请联系客服。",
+      "table": {
+        "orderId": "订单号",
+        "date": "日期",
+        "amount": "金额",
+        "status": "状态"
+      }
+    },
     "stats": {
       "hero": {
         "title": "数据统计",
@@ -449,6 +467,14 @@
     ],
     "note": "所有评价均应反映您的真实体验，我们感谢每一条真诚、中肯的反馈。",
     "thankYou": "感谢您对我们的支持！"
+  },
+  "order": {
+    "success": {
+      "title": "预订成功！",
+      "subtitle": "感谢您选择中国医旅。",
+      "message": "您的专属协调员 Carrie Lan 将在 24 小时内与您联系，确认治疗方案及出行安排。",
+      "backHome": "返回首页"
+    }
   },
   "footer": {
     "description": "MedTravel China —— 面向北美华人的高端种植牙医旅套餐，比美国节省60–70%，3周全包起价 $7,800。",

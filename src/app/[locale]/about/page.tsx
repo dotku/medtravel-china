@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { SALES_CTA_URL } from "@/lib/sales-cta";
 
 export default function AboutPage() {
   const t = useTranslations();
@@ -219,7 +220,9 @@ export default function AboutPage() {
             {t("pages.about.cta.subtitle")}
           </p>
           <Link
-            href="/contact"
+            href={SALES_CTA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-block rounded-full bg-white px-8 py-3 font-semibold text-emerald-600 transition-colors hover:bg-emerald-50"
           >
             {t("common.contact")}

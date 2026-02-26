@@ -2,6 +2,9 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BookButton } from "./BookButton";
+import { SALES_CTA_URL } from "@/lib/sales-cta";
+import type { PackageKey } from "@/lib/stripe-products";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -22,10 +25,27 @@ export default function PricingPage() {
     { key: "tcm", icon: "🛁", color: "amber" },
   ];
 
-  const colorClasses: Record<string, { bg: string; border: string; text: string }> = {
-    blue: { bg: "bg-blue-50", border: "border-blue-200", text: "text-blue-600" },
-    green: { bg: "bg-green-50", border: "border-green-200", text: "text-green-600" },
-    amber: { bg: "bg-amber-50", border: "border-amber-200", text: "text-amber-600" },
+  const dentalPackageKeys: PackageKey[] = ["single", "half-mouth", "full-mouth"];
+
+  const colorClasses: Record<
+    string,
+    { bg: string; border: string; text: string }
+  > = {
+    blue: {
+      bg: "bg-blue-50",
+      border: "border-blue-200",
+      text: "text-blue-600",
+    },
+    green: {
+      bg: "bg-green-50",
+      border: "border-green-200",
+      text: "text-green-600",
+    },
+    amber: {
+      bg: "bg-amber-50",
+      border: "border-amber-200",
+      text: "text-amber-600",
+    },
   };
 
   const packageItems = t.raw("pricing.packages.items") as string[];
@@ -50,7 +70,9 @@ export default function PricingPage() {
           <div className="space-y-12">
             {categories.map((category) => {
               const colors = colorClasses[category.color];
-              const items = t.raw(`pricing.categories.${category.key}.items`) as Array<{
+              const items = t.raw(
+                `pricing.categories.${category.key}.items`,
+              ) as Array<{
                 name: string;
                 price: string;
               }>;
@@ -73,10 +95,16 @@ export default function PricingPage() {
                       <thead>
                         <tr className="border-b border-gray-200 bg-white/50">
                           <th className="px-6 py-3 text-left text-base font-semibold text-gray-900">
-                            {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Service" : "服务项目"}
+                            {t("services.dentalCare.name").split(" ")[0] ===
+                            "Dental"
+                              ? "Service"
+                              : "服务项目"}
                           </th>
                           <th className="px-6 py-3 text-right text-base font-semibold text-gray-900">
-                            {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Price" : "价格"}
+                            {t("services.dentalCare.name").split(" ")[0] ===
+                            "Dental"
+                              ? "Price"
+                              : "价格"}
                           </th>
                         </tr>
                       </thead>
@@ -87,9 +115,14 @@ export default function PricingPage() {
                               {item.name}
                             </td>
                             <td className="px-6 py-4 text-right">
-                              <span className={`text-base font-semibold ${colors.text}`}>
+                              <span
+                                className={`text-base font-semibold ${colors.text}`}
+                              >
                                 {item.price}
                               </span>
+                              {category.key === "dental" && dentalPackageKeys[index] && (
+                                <BookButton packageKey={dentalPackageKeys[index]} />
+                              )}
                             </td>
                           </tr>
                         ))}
@@ -143,13 +176,17 @@ export default function PricingPage() {
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link
-                href="#contact"
+                href={SALES_CTA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-8 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-emerald-700"
               >
                 {t("common.getQuote")}
               </Link>
               <Link
-                href="#contact"
+                href={SALES_CTA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-8 py-3 text-base font-semibold text-gray-700 shadow transition-all hover:bg-gray-50"
               >
                 {t("common.contact")}

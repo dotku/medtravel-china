@@ -22,6 +22,11 @@ export function Header() {
     { href: `/${locale}/contact`, label: t("contact") },
   ];
 
+  const loggedInLinks = [
+    ...navLinks,
+    ...(user ? [{ href: `/${locale}/order`, label: t("orders") }] : []),
+  ];
+
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -38,7 +43,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-6 md:flex">
-            {navLinks.map((link) => (
+            {loggedInLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -108,7 +113,7 @@ export function Header() {
         {isMenuOpen && (
           <div className="border-t border-gray-200 py-4 md:hidden">
             <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
+              {loggedInLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}

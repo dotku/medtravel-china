@@ -14,7 +14,8 @@
     "included": "Included",
     "getQuote": "Get Quote",
     "login": "Login",
-    "logout": "Logout"
+    "logout": "Logout",
+    "orders": "My Orders"
   },
   "home": {
     "hero": {
@@ -102,6 +103,10 @@
     }
   },
   "pricing": {
+    "bookNow": "Book Now",
+    "loginToBook": "Login to Book",
+    "booking": "Processing...",
+    "bookSalesCall": "Book a Sales Call",
     "title": "All-Inclusive Medical Travel Packages",
     "subtitle": "Everything covered — except your international flight.",
     "disclaimer": "Prices cover the complete 3-week package: procedure, hotel, meals, transport, tour, and TCM recovery. Contact us for a personalized quote.",
@@ -376,6 +381,19 @@
       }
     },
     "stats": {
+    "orders": {
+      "title": "My Orders",
+      "subtitle": "View your recent booking and payment history.",
+      "empty": "No orders yet.",
+      "goPricing": "View Packages",
+      "noEmail": "No email found for your account. Please contact support.",
+      "table": {
+        "orderId": "Order ID",
+        "date": "Date",
+        "amount": "Amount",
+        "status": "Status"
+      }
+    },
       "hero": {
         "title": "Business Analytics",
         "subtitle": "Our growth, shared openly with our partners"
@@ -449,6 +467,14 @@
     ],
     "note": "All reviews should reflect your genuine experience. We appreciate honest, constructive feedback.",
     "thankYou": "Thank you for helping us grow!"
+  },
+  "order": {
+    "success": {
+      "title": "Booking Confirmed!",
+      "subtitle": "Thank you for choosing MedTravel China.",
+      "message": "Your patient coordinator Carrie Lan will contact you within 24 hours to confirm your treatment plan and travel arrangements.",
+      "backHome": "Back to Home"
+    }
   },
   "footer": {
     "description": "MedTravel China — Premium dental implant travel packages to Nanning, China. Save 60–70% vs. US prices. All-inclusive 3-week packages from $7,800.",
