@@ -22,7 +22,12 @@ export default async function StatsPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "pages.stats" });
 
   type MetricItem = { label: string; value: string; desc: string };
-  type TrafficItem = { label: string; value: string; desc: string; trend: string };
+  type TrafficItem = {
+    label: string;
+    value: string;
+    desc: string;
+    trend: string;
+  };
   type ServiceItem = { name: string; share: string; bar: number };
 
   const metrics = t.raw("metrics.items") as MetricItem[];
@@ -34,21 +39,33 @@ export default async function StatsPage({ params }: Props) {
       {/* Hero */}
       <section className="bg-linear-to-br from-emerald-600 to-emerald-800 text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">{t("hero.title")}</h1>
-          <p className="text-emerald-100 text-lg max-w-2xl mx-auto">{t("hero.subtitle")}</p>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+            {t("hero.title")}
+          </h1>
+          <p className="text-emerald-100 text-lg max-w-2xl mx-auto">
+            {t("hero.subtitle")}
+          </p>
         </div>
       </section>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
-
         {/* Key Metrics */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">{t("metrics.title")}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            {t("metrics.title")}
+          </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {metrics.map((item) => (
-              <div key={item.label} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
-                <div className="text-4xl font-bold text-emerald-600 mb-2">{item.value}</div>
-                <div className="font-semibold text-gray-800 mb-1">{item.label}</div>
+              <div
+                key={item.label}
+                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center"
+              >
+                <div className="text-4xl font-bold text-emerald-600 mb-2">
+                  {item.value}
+                </div>
+                <div className="font-semibold text-gray-800 mb-1">
+                  {item.label}
+                </div>
                 <div className="text-sm text-gray-500">{item.desc}</div>
               </div>
             ))}
@@ -57,13 +74,22 @@ export default async function StatsPage({ params }: Props) {
 
         {/* Traffic & Conversions */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">{t("traffic.title")}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">
+            {t("traffic.title")}
+          </h2>
           <p className="text-gray-500 mb-6">{t("traffic.subtitle")}</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {trafficItems.map((item) => (
-              <div key={item.label} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <div className="text-3xl font-bold text-gray-900 mb-1">{item.value}</div>
-                <div className="font-semibold text-gray-700 mb-1">{item.label}</div>
+              <div
+                key={item.label}
+                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
+              >
+                <div className="text-3xl font-bold text-gray-900 mb-1">
+                  {item.value}
+                </div>
+                <div className="font-semibold text-gray-700 mb-1">
+                  {item.label}
+                </div>
                 <div className="text-sm text-gray-500 mb-3">{item.desc}</div>
                 <span className="inline-block text-xs font-medium bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full">
                   {item.trend}
@@ -75,7 +101,9 @@ export default async function StatsPage({ params }: Props) {
 
         {/* Top Services */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">{t("topServices.title")}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            {t("topServices.title")}
+          </h2>
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 space-y-5">
             {topServices.map((svc) => (
               <div key={svc.name}>
@@ -97,23 +125,44 @@ export default async function StatsPage({ params }: Props) {
         {/* Vercel Analytics CTA */}
         <section>
           <div className="bg-linear-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">{t("analytics.title")}</h2>
-            <p className="text-gray-600 mb-6 max-w-2xl">{t("analytics.description")}</p>
-            <a
-              href="https://vercel.com/analytics"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-            >
-              {t("analytics.cta")}
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              {t("analytics.title")}
+            </h2>
+            <p className="text-gray-600 mb-6 max-w-2xl">
+              {t("analytics.description")}
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://vercel.com/analytics"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+              >
+                {t("analytics.cta")}
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+              <a
+                href={`/${locale}/stats/affiliate`}
+                className="inline-flex items-center gap-2 border border-emerald-300 bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg transition-colors hover:bg-emerald-50"
+              >
+                {t("affiliate.cta")}
+              </a>
+            </div>
             <p className="mt-4 text-sm text-gray-500">{t("analytics.note")}</p>
           </div>
         </section>
-
       </div>
     </div>
   );

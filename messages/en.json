@@ -380,7 +380,6 @@
         ]
       }
     },
-    "stats": {
     "orders": {
       "title": "My Orders",
       "subtitle": "View your recent booking and payment history.",
@@ -394,6 +393,7 @@
         "status": "Status"
       }
     },
+    "stats": {
       "hero": {
         "title": "Business Analytics",
         "subtitle": "Our growth, shared openly with our partners"
@@ -430,6 +430,32 @@
         "description": "Detailed real-time analytics including page views, traffic sources, and user behavior are available on the Vercel Analytics dashboard.",
         "cta": "View Vercel Dashboard",
         "note": "Access requires Vercel project membership. Contact the tech team for access."
+      },
+      "affiliate": {
+        "cta": "View Affiliate Report",
+        "title": "Affiliate Report",
+        "subtitle": "Apply for an affiliate link and track orders, revenue, and 5% commission.",
+        "back": "Back to Stats",
+        "empty": "No affiliate-attributed orders yet.",
+        "myRef": "My Affiliate Ref",
+        "myLink": "My Referral Link",
+        "commissionRate": "Commission Rate: {rate}% of paid order revenue",
+        "apply": {
+          "title": "Become an Affiliate",
+          "description": "Submit your application to generate your referral link. You can earn 5% from paid orders attributed to your ref.",
+          "button": "Apply Now",
+          "applying": "Applying...",
+          "success": "Application submitted successfully. Your affiliate link is now active.",
+          "error": "Unable to submit application. Please try again."
+        },
+        "table": {
+          "ref": "Affiliate Ref",
+          "orders": "Orders",
+          "paidOrders": "Paid Orders",
+          "revenue": "Revenue",
+          "commission": "Commission (5%)",
+          "link": "Referral Link"
+        }
       }
     }
   },

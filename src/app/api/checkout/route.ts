@@ -2,6 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth0 } from "@/lib/auth0";
 import { stripe } from "@/lib/stripe";
 import { stripeProducts, type PackageKey } from "@/lib/stripe-products";
+import {
+  AFFILIATE_COMMISSION_BPS,
+  AFFILIATE_COOKIE_NAME,
+  isValidAffiliateRef,
+} from "@/lib/affiliate";
 
 export async function POST(req: NextRequest) {
   const session = await auth0.getSession();
@@ -30,6 +35,11 @@ export async function POST(req: NextRequest) {
 
   const baseUrl = process.env.APP_BASE_URL ?? "http://localhost:3000";
   const label = locale === "zh" ? product.labelZh : product.labelEn;
+  const affiliateRefRaw = req.cookies.get(AFFILIATE_COOKIE_NAME)?.value;
+  const affiliateRef =
+    affiliateRefRaw && isValidAffiliateRef(affiliateRefRaw)
+      ? affiliateRefRaw
+      : undefined;
 
   const existingCustomers = await stripe.customers.list({
     email: userEmail,
@@ -59,6 +69,12 @@ export async function POST(req: NextRequest) {
       packageKey,
       locale,
       userEmail,
+      ...(affiliateRef
+        ? {
+            affiliateRef,
+            affiliateCommissionBps: String(AFFILIATE_COMMISSION_BPS),
+          }
+        : {}),
     },
     success_url: `${baseUrl}/${locale}/order/success?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${baseUrl}/${locale}/pricing`,

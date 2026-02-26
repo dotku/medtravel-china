@@ -198,7 +198,7 @@
     },
     "about": {
       "title": "关于我们",
-      "subtitle": "MedTravel China 专注为北美华人客户提供高端种植牙医疗旅游一站式服务。",
+      "subtitle": "MedTravel China 专注为北美及全球客户提供高端种植牙医疗旅游一站式服务。",
       "mission": {
         "title": "我们的使命",
         "description": "我们将北美患者与南宁象雅口腔——广西最先进的种植牙中心之一——精准对接，并将整个体验打包成一段完整的3周广西深度康养之旅。您做好了牙，也看了世界。",
@@ -430,6 +430,32 @@
         "description": "包括页面浏览量、流量来源和用户行为在内的详细实时分析数据，可在 Vercel Analytics 后台查看。",
         "cta": "查看 Vercel 数据后台",
         "note": "访问需要 Vercel 项目权限，如需开通请联系技术团队。"
+      },
+      "affiliate": {
+        "cta": "查看渠道报表",
+        "title": "渠道 Affiliate 报表",
+        "subtitle": "申请 affiliate 链接并追踪订单、收入与 5% 佣金。",
+        "back": "返回统计页",
+        "empty": "暂未检测到带有渠道 ref 的订单。",
+        "myRef": "我的 Affiliate Ref",
+        "myLink": "我的推广链接",
+        "commissionRate": "佣金比例：已支付订单收入的 {rate}%",
+        "apply": {
+          "title": "申请成为 Affiliate",
+          "description": "提交申请后即可生成专属推广链接。通过您的 ref 产生并完成支付的订单，可获得 5% 佣金。",
+          "button": "立即申请",
+          "applying": "申请中...",
+          "success": "申请成功，您的 affiliate 链接已生效。",
+          "error": "申请失败，请稍后重试。"
+        },
+        "table": {
+          "ref": "渠道 Ref",
+          "orders": "订单数",
+          "paidOrders": "已支付订单",
+          "revenue": "收入",
+          "commission": "佣金（5%）",
+          "link": "推广链接"
+        }
       }
     }
   },
@@ -477,7 +503,7 @@
     }
   },
   "footer": {
-    "description": "MedTravel China —— 面向北美华人的高端种植牙医旅套餐，比美国节省60–70%，3周全包起价 $7,800。",
+    "description": "MedTravel China —— 面向北美及全球客户的高端种植牙医旅套餐，比美国节省60–70%，3周全包起价 $7,800。",
     "techSupplier": "本站由 JY Tech LLC (杰圆科技) 提供技术支持",
     "quickLinks": "快速链接",
     "contactUs": "联系我们",
