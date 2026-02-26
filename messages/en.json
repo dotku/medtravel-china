@@ -17,7 +17,7 @@
   "home": {
     "hero": {
       "title": "Dental Implants in Guangxi, China — Save 60–70%",
-      "subtitle": "Nanning is Guangxi's dental tourism hub — 300+ licensed clinics, EU/US standards, Swiss ITI · All-on-4 systems. All-inclusive 4-week packages from $7,800, combining top dental care with scenic Guangxi recovery tours.",
+      "subtitle": "Nanning is Guangxi's dental tourism hub — 300+ licensed clinics, EU/US standards. Single implants from $1,200, backed by a 20-year quality guarantee. All-inclusive 4-week packages from $7,800.",
       "cta": "Explore Packages"
     },
     "whyChooseUs": {
@@ -27,8 +27,8 @@
         "description": "Nanning is a fully developed dental tourism hub. 300+ licensed clinics operate to EU/US protocols with German 3D CBCT imaging and internationally certified implant systems — world-class care at local prices."
       },
       "cost": {
-        "title": "Save 60–70% vs. North America",
-        "description": "A single implant that costs $3,000–$6,000 in the US is typically $900–$1,400 total in Nanning. All-on-4 full-mouth from $12,000 vs. $30,000+ abroad. Same brands, same standards — at a significantly lower cost."
+        "title": "Save 60–70% — From $1,200 Per Implant",
+        "description": "A single implant costs $3,000–$6,000 in the US. In Nanning, the same brand and protocol starts from $1,200 all-in — saving you 60–70%. All-on-4 full-mouth from $12,000 vs. $30,000+ in North America. Every implant backed by a 20-year quality guarantee."
       },
       "tcm": {
         "title": "Guangxi Wellness & Recovery Culture",
@@ -51,7 +51,7 @@
       "partners": "Partner Institutions",
       "market": "Travel Market Coverage",
       "services": "Savings vs. US Prices",
-      "support": "Support",
+      "warranty": "Quality Guarantee",
       "clinics": "Dental Clinics in Nanning",
       "tourists": "Annual Nanning Visitors"
     },
@@ -348,9 +348,11 @@
       "info": {
         "title": "Get in Touch",
         "description": "Have questions about our services? Our patient coordinators are available 24/7 to assist you.",
+        "contact": "Contact Person",
         "email": "Email",
         "phone": "Phone",
-        "hours": "Working Hours",
+        "warranty": "Quality Guarantee",
+        "warrantyValue": "20-Year Dental Implant Guarantee",
         "address": "Address"
       },
       "social": {

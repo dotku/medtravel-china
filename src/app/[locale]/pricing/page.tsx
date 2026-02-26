@@ -73,10 +73,10 @@ export default function PricingPage() {
                     <table className="w-full">
                       <thead>
                         <tr className="border-b border-gray-200 bg-white/50">
-                          <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
+                          <th className="px-6 py-3 text-left text-base font-semibold text-gray-900">
                             {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Service" : "服务项目"}
                           </th>
-                          <th className="px-6 py-3 text-right text-sm font-semibold text-gray-900">
+                          <th className="px-6 py-3 text-right text-base font-semibold text-gray-900">
                             {t("services.dentalCare.name").split(" ")[0] === "Dental" ? "Price" : "价格"}
                           </th>
                         </tr>
@@ -84,11 +84,11 @@ export default function PricingPage() {
                       <tbody className="divide-y divide-gray-200 bg-white">
                         {items.map((item, index) => (
                           <tr key={index} className="hover:bg-gray-50">
-                            <td className="px-6 py-4 text-sm text-gray-900">
+                            <td className="px-6 py-4 text-base text-gray-900">
                               {item.name}
                             </td>
                             <td className="px-6 py-4 text-right">
-                              <span className={`text-sm font-semibold ${colors.text}`}>
+                              <span className={`text-base font-semibold ${colors.text}`}>
                                 {item.price}
                               </span>
                             </td>
@@ -116,7 +116,7 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="mt-12 rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-8">
+          <div className="mt-12 rounded-2xl border border-emerald-200 bg-linear-to-br from-emerald-50 to-white p-8">
             <h3 className="text-lg font-semibold text-gray-900">
               {t("pricing.packages.includes")}
             </h3>
@@ -138,20 +138,20 @@ export default function PricingPage() {
                       />
                     </svg>
                   </div>
-                  <span className="text-sm text-gray-700">{item}</span>
+                  <span className="text-base text-gray-700">{item}</span>
                 </div>
               ))}
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-emerald-700"
+                className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-8 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-emerald-700"
               >
                 {t("common.getQuote")}
               </Link>
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-8 py-3 text-sm font-semibold text-gray-700 shadow transition-all hover:bg-gray-50"
+                className="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-8 py-3 text-base font-semibold text-gray-700 shadow transition-all hover:bg-gray-50"
               >
                 {t("common.contact")}
               </Link>

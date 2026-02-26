@@ -19,8 +19,15 @@
   }
 }
 
+/* Base typography — optimised for middle-aged / senior readers */
+html {
+  font-size: 112.5%; /* 18px base — scales all rem-based Tailwind text-* classes up 12.5% */
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
 }

@@ -40,7 +40,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-600 transition-colors hover:text-emerald-600"
+                className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
               >
                 {link.label}
               </Link>
@@ -87,7 +87,7 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium text-gray-600 transition-colors hover:text-emerald-600"
+                  className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}

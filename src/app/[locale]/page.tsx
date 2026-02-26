@@ -164,7 +164,7 @@ export default function Home() {
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                Gov&apos;t Licensed · EU/US Protocols
+                20-Year Implant Warranty · Gov&apos;t Licensed
               </span>
             </div>
 
@@ -203,10 +203,10 @@ export default function Home() {
       <section className="relative -mt-16 z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
+            { value: "20年", labelKey: "warranty" },
             { value: "300+", labelKey: "clinics" },
             { value: "700万+", labelKey: "tourists" },
             { value: "60%+", labelKey: "services" },
-            { value: "24/7", labelKey: "support" },
           ].map((stat, index) => (
             <div
               key={index}
@@ -243,7 +243,7 @@ export default function Home() {
                 <h3 className="mt-6 text-lg font-semibold text-gray-900">
                   {t(`home.whyChooseUs.${feature.key}.title`)}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                <p className="mt-2 text-base leading-relaxed text-gray-600">
                   {t(`home.whyChooseUs.${feature.key}.description`)}
                 </p>
               </div>
@@ -286,7 +286,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-gray-600">
+                  <p className="text-base leading-relaxed text-gray-600">
                     {t(`services.${service.key}.description`)}
                   </p>
                   <Link

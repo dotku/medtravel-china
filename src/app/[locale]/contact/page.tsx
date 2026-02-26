@@ -28,11 +28,20 @@ export default function ContactPage() {
     {
       icon: (
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+        </svg>
+      ),
+      key: "contact",
+      value: "Carrie Lan",
+    },
+    {
+      icon: (
+        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
         </svg>
       ),
       key: "email",
-      value: "contact@medtravel-china.com",
+      value: "carrie.lan998@gmail.com",
     },
     {
       icon: (
@@ -41,16 +50,16 @@ export default function ContactPage() {
         </svg>
       ),
       key: "phone",
-      value: "+86 773 123 4567",
+      value: "+1 (415) 851-1937",
     },
     {
       icon: (
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
         </svg>
       ),
-      key: "hours",
-      value: "24/7",
+      key: "warranty",
+      value: t("pages.contact.info.warrantyValue"),
     },
     {
       icon: (
@@ -60,7 +69,7 @@ export default function ContactPage() {
         </svg>
       ),
       key: "address",
-      value: "123 Medical Street, Guilin, Guangxi 541000, China",
+      value: "600 California St, San Francisco, CA 94108",
     },
   ];
 
@@ -123,7 +132,7 @@ export default function ContactPage() {
 
               <form onSubmit={handleSubmit} className="mt-8 space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="name" className="block text-base font-medium text-gray-700">
                     {t("pages.contact.form.name")} *
                   </label>
                   <input
@@ -139,7 +148,7 @@ export default function ContactPage() {
 
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="email" className="block text-base font-medium text-gray-700">
                       {t("pages.contact.form.email")} *
                     </label>
                     <input
@@ -153,7 +162,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="phone" className="block text-base font-medium text-gray-700">
                       {t("pages.contact.form.phone")}
                     </label>
                     <input
@@ -168,7 +177,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="service" className="block text-base font-medium text-gray-700">
                     {t("pages.contact.form.service")}
                   </label>
                   <select
@@ -186,7 +195,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="message" className="block text-base font-medium text-gray-700">
                     {t("pages.contact.form.message")} *
                   </label>
                   <textarea
