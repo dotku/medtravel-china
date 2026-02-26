@@ -27,6 +27,19 @@ type AffiliateProfile = {
   commissionBps: number;
 };
 
+const USD_TO_RMB_RATE = Number(process.env.USD_TO_RMB_RATE ?? "7.2");
+
+function formatMoneyByLocale(locale: string, usdCents: number): string {
+  const isZh = locale === "zh";
+  const amount = isZh ? (usdCents / 100) * USD_TO_RMB_RATE : usdCents / 100;
+  const value = amount.toLocaleString(isZh ? "zh-CN" : "en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+
+  return `${value} ${isZh ? "RMB" : "USD"}`;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({
@@ -226,14 +239,7 @@ export default async function AffiliateStatsPage({ params }: Props) {
                 {t("pages.stats.affiliate.table.revenue")}
               </p>
               <p className="mt-1 text-2xl font-semibold text-gray-900">
-                {(revenueCents / 100).toLocaleString(
-                  locale === "zh" ? "zh-CN" : "en-US",
-                  {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2,
-                  },
-                )}{" "}
-                USD
+                {formatMoneyByLocale(locale, revenueCents)}
               </p>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-5">
@@ -241,14 +247,7 @@ export default async function AffiliateStatsPage({ params }: Props) {
                 {t("pages.stats.affiliate.table.commission")}
               </p>
               <p className="mt-1 text-2xl font-semibold text-emerald-700">
-                {(commissionCents / 100).toLocaleString(
-                  locale === "zh" ? "zh-CN" : "en-US",
-                  {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2,
-                  },
-                )}{" "}
-                USD
+                {formatMoneyByLocale(locale, commissionCents)}
               </p>
             </div>
           </div>
@@ -351,24 +350,10 @@ export default async function AffiliateStatsPage({ params }: Props) {
                       {item.paidOrders}
                     </td>
                     <td className="px-6 py-4 text-sm font-medium text-gray-900">
-                      {(item.revenueCents / 100).toLocaleString(
-                        locale === "zh" ? "zh-CN" : "en-US",
-                        {
-                          minimumFractionDigits: 2,
-                          maximumFractionDigits: 2,
-                        },
-                      )}{" "}
-                      USD
+                      {formatMoneyByLocale(locale, item.revenueCents)}
                     </td>
                     <td className="px-6 py-4 text-sm font-semibold text-emerald-700">
-                      {(item.commissionCents / 100).toLocaleString(
-                        locale === "zh" ? "zh-CN" : "en-US",
-                        {
-                          minimumFractionDigits: 2,
-                          maximumFractionDigits: 2,
-                        },
-                      )}{" "}
-                      USD
+                      {formatMoneyByLocale(locale, item.commissionCents)}
                     </td>
                     <td className="px-6 py-4 text-sm text-emerald-700">
                       {`${baseUrl}/${locale}?ref=${item.ref}`}
