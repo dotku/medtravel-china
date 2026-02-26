@@ -4,12 +4,14 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { useUser } from "@auth0/nextjs-auth0";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const t = useTranslations("common");
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, isLoading } = useUser();
 
   const locale = pathname.split("/")[1];
 
@@ -46,6 +48,29 @@ export function Header() {
               </Link>
             ))}
             <LanguageSwitcher />
+            {!isLoading && (
+              user ? (
+                <div className="flex items-center gap-3">
+                  {user.picture && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={user.picture} alt={user.name ?? ""} className="h-8 w-8 rounded-full" />
+                  )}
+                  <a
+                    href="/auth/logout"
+                    className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
+                  >
+                    {t("logout")}
+                  </a>
+                </div>
+              ) : (
+                <a
+                  href={`/auth/login?returnTo=/${locale}`}
+                  className="rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+                >
+                  {t("login")}
+                </a>
+              )
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,8 +118,22 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-2">
+              <div className="pt-2 flex items-center justify-between">
                 <LanguageSwitcher />
+                {!isLoading && (
+                  user ? (
+                    <a href="/auth/logout" className="text-sm font-medium text-gray-500 hover:text-gray-900">
+                      {t("logout")}
+                    </a>
+                  ) : (
+                    <a
+                      href={`/auth/login?returnTo=/${locale}`}
+                      className="rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700"
+                    >
+                      {t("login")}
+                    </a>
+                  )
+                )}
               </div>
             </div>
           </div>

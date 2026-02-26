@@ -12,12 +12,14 @@
     "from": "From",
     "perSession": "per session",
     "included": "Included",
-    "getQuote": "Get Quote"
+    "getQuote": "Get Quote",
+    "login": "Login",
+    "logout": "Logout"
   },
   "home": {
     "hero": {
       "title": "Dental Implants in Guangxi, China — Save 60–70%",
-      "subtitle": "Nanning is Guangxi's dental tourism hub — 300+ licensed clinics, EU/US standards. Single implants from $1,200, backed by a 20-year quality guarantee. All-inclusive 4-week packages from $7,800.",
+      "subtitle": "Nanning is Guangxi's dental tourism hub — 300+ licensed clinics, EU/US standards. Single implants from $1,200, backed by a 20-year quality guarantee. All-inclusive 3-week packages from $7,800.",
       "cta": "Explore Packages"
     },
     "whyChooseUs": {
@@ -56,8 +58,8 @@
       "tourists": "Annual Nanning Visitors"
     },
     "recovery": {
-      "title": "4 Weeks in Guangxi — Heal & Explore",
-      "description": "Your 4-week package is designed around your recovery timeline. Week 1 is your implant procedure. Weeks 2–4 let you relax, tour, and recover in one of China's most scenic provinces.",
+      "title": "3 Weeks in Guangxi — Heal & Explore",
+      "description": "Your 3-week package is designed around your recovery timeline. Week 1 is your implant procedure. Weeks 2–3 let you relax, tour, and recover in one of China's most scenic provinces.",
       "items": [
         "Detian Transnational Waterfall & Tongling Grand Canyon",
         "Bama Longevity Valley — 10-session herbal bath therapy",
@@ -102,28 +104,20 @@
   "pricing": {
     "title": "All-Inclusive Medical Travel Packages",
     "subtitle": "Everything covered — except your international flight.",
-    "disclaimer": "Prices cover the complete 4-week package: procedure, hotel, meals, transport, tour, and TCM recovery. Contact us for a personalized quote.",
+    "disclaimer": "Prices cover the complete 3-week package: procedure, hotel, meals, transport, tour, and TCM recovery. Contact us for a personalized quote.",
     "categories": {
       "dental": {
-        "name": "4-Week All-Inclusive Packages",
+        "name": "3-Week All-Inclusive Packages",
         "items": [
-          { "name": "Single Implant — 4-Week Package", "price": "From $7,800" },
-          { "name": "Half-Mouth All-on-4 — 4-Week Package", "price": "From $16,800" },
-          { "name": "Full-Mouth All-on-4 — 4-Week Package", "price": "From $24,800" }
-        ]
-      },
-      "checkup": {
-        "name": "Approx. 3-Week Treatment Packages",
-        "items": [
-          { "name": "Single Implant — Approx. 3 Weeks", "price": "From $4,200" },
-          { "name": "Half-Mouth All-on-4 — Approx. 3 Weeks", "price": "From $10,500" },
-          { "name": "Full-Mouth All-on-4 — Approx. 3 Weeks", "price": "From $16,800" }
+          { "name": "Single Implant — 3-Week Package", "price": "From $7,800" },
+          { "name": "Half-Mouth All-on-4 — 3-Week Package", "price": "From $16,800" },
+          { "name": "Full-Mouth All-on-4 — 3-Week Package", "price": "From $24,800" }
         ]
       },
       "tcm": {
         "name": "Add-Ons (available with any package)",
         "items": [
-          { "name": "TCM Herbal Bath 10-Session Course", "price": "Included in 4-week packages" },
+          { "name": "TCM Herbal Bath 10-Session Course", "price": "Included in 3-week packages" },
           { "name": "Private Photography Tour", "price": "From $300" },
           { "name": "Extended Hotel Stay (per night)", "price": "From $80" }
         ]
@@ -202,7 +196,7 @@
       "subtitle": "MedTravel China specializes in premium dental implant travel packages for North American patients seeking world-class care at a fraction of the cost.",
       "mission": {
         "title": "Our Mission",
-        "description": "We connect North American patients with Nanning Xiangya Dental Clinic — one of Guangxi's most advanced implant centers — and wrap the experience in a full 4-week recovery tour across Guangxi's natural wonders. You get the dental work done right, and come home having experienced something unforgettable.",
+        "description": "We connect North American patients with Nanning Xiangya Dental Clinic — one of Guangxi's most advanced implant centers — and wrap the experience in a full 3-week recovery tour across Guangxi's natural wonders. You get the dental work done right, and come home having experienced something unforgettable.",
         "points": [
           "Partner with China's best dental clinics, not just the cheapest",
           "Build complete packages so patients never have to figure out logistics alone",
@@ -374,7 +368,7 @@
         "title": "Frequently Asked Questions",
         "items": [
           { "question": "Am I a good candidate for dental implants?", "answer": "Most adults with good general health qualify. We ask you to send us a recent panoramic X-ray or CBCT scan (or we'll arrange one on arrival). Our Xiangya team will assess bone density, gum health, and sinus proximity before confirming a treatment plan." },
-          { "question": "How long do I need to stay in China?", "answer": "Our standard package is 4 weeks. Week 1 is for surgery and initial healing. Weeks 2–4 you'll tour Guangxi and do your herbal bath recovery sessions, returning for a check-up before you fly home. Same-day or 2-stage implants can be discussed for shorter stays." },
+          { "question": "How long do I need to stay in China?", "answer": "Our standard package is 3 weeks. Week 1 is for surgery and initial healing. Weeks 2–3 you'll tour Guangxi and do your herbal bath recovery sessions, returning for a check-up before you fly home. Same-day or 2-stage implants can be discussed for shorter stays." },
           { "question": "What implant brands do you use?", "answer": "Xiangya Dental offers Swiss ITI (Straumann), US Zirconia ET, and Korean Osstem systems — all internationally recognized brands used in US and EU clinics. Brand and material choice affects cost and is discussed during your consultation." },
           { "question": "Do you provide visa assistance?", "answer": "Yes. We provide a formal invitation letter from Xiangya Dental Clinic to support your medical visa application, plus guidance on the application process from our US team." },
           { "question": "Is payment secure?", "answer": "All payments are made to the designated receiving account stated in your written service agreement. We provide itemized invoices and a written service agreement before you pay anything. We do not collect payments through third-party travel agents." }
@@ -457,7 +451,7 @@
     "thankYou": "Thank you for helping us grow!"
   },
   "footer": {
-    "description": "MedTravel China — Premium dental implant travel packages to Nanning, China. Save 60–70% vs. US prices. All-inclusive 4-week packages from $7,800.",
+    "description": "MedTravel China — Premium dental implant travel packages to Nanning, China. Save 60–70% vs. US prices. All-inclusive 3-week packages from $7,800.",
     "techSupplier": "Technical support for this site is provided by JY Tech LLC (Jieyuan Technology).",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",

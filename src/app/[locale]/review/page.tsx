@@ -1,6 +1,7 @@
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { auth0 } from "@/lib/auth0";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -12,9 +13,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // TODO: Replace these with your real profile URLs once registered
 const platformLinks: Record<string, string> = {
-  google: "https://maps.google.com",           // Replace with your Google Maps business URL
-  tripadvisor: "https://www.tripadvisor.com",  // Replace with your TripAdvisor listing URL
-  xiaohongshu: "https://www.xiaohongshu.com",  // Replace with your 小红书 profile URL
+  google: "https://maps.google.com",
+  tripadvisor: "https://www.tripadvisor.com",
+  xiaohongshu: "https://www.xiaohongshu.com",
 };
 
 const colorMap: Record<string, { bg: string; border: string; btn: string; badge: string }> = {
@@ -44,8 +45,15 @@ const platformEmoji: Record<string, string> = {
   xiaohongshu: "📱",
 };
 
-export default function ReviewPage() {
-  const t = useTranslations("review");
+export default async function ReviewPage({ params }: Props) {
+  const { locale } = await params;
+
+  const session = await auth0.getSession();
+  if (!session) {
+    redirect(`/auth/login?returnTo=/${locale}/review`);
+  }
+
+  const t = await getTranslations({ locale, namespace: "review" });
 
   type Platform = {
     id: string;
@@ -61,7 +69,7 @@ export default function ReviewPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white py-16">
+      <section className="bg-linear-to-br from-emerald-600 to-emerald-800 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-5xl mb-4">⭐</div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">{t("hero.title")}</h1>
@@ -86,10 +94,7 @@ export default function ReviewPage() {
                 key={platform.id}
                 className={`rounded-xl border p-6 flex flex-col sm:flex-row sm:items-center gap-5 ${colors.bg} ${colors.border}`}
               >
-                {/* Icon */}
-                <div className="text-4xl flex-shrink-0">{emoji}</div>
-
-                {/* Info */}
+                <div className="text-4xl shrink-0">{emoji}</div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1 flex-wrap">
                     <h2 className="font-bold text-gray-900 text-lg">{platform.name}</h2>
@@ -99,13 +104,11 @@ export default function ReviewPage() {
                   </div>
                   <p className="text-gray-600 text-sm">{platform.description}</p>
                 </div>
-
-                {/* CTA */}
                 <a
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex-shrink-0 inline-flex items-center gap-2 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm ${colors.btn}`}
+                  className={`shrink-0 inline-flex items-center gap-2 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm ${colors.btn}`}
                 >
                   {platform.cta}
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

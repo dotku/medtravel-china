@@ -1,6 +1,7 @@
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { auth0 } from "@/lib/auth0";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -10,8 +11,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: t("hero.title") };
 }
 
-export default function StatsPage() {
-  const t = useTranslations("pages.stats");
+export default async function StatsPage({ params }: Props) {
+  const { locale } = await params;
+
+  const session = await auth0.getSession();
+  if (!session) {
+    redirect(`/auth/login?returnTo=/${locale}/stats`);
+  }
+
+  const t = await getTranslations({ locale, namespace: "pages.stats" });
 
   type MetricItem = { label: string; value: string; desc: string };
   type TrafficItem = { label: string; value: string; desc: string; trend: string };
@@ -24,7 +32,7 @@ export default function StatsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white py-16">
+      <section className="bg-linear-to-br from-emerald-600 to-emerald-800 text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">{t("hero.title")}</h1>
           <p className="text-emerald-100 text-lg max-w-2xl mx-auto">{t("hero.subtitle")}</p>
@@ -88,7 +96,7 @@ export default function StatsPage() {
 
         {/* Vercel Analytics CTA */}
         <section>
-          <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-8">
+          <div className="bg-linear-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">{t("analytics.title")}</h2>
             <p className="text-gray-600 mb-6 max-w-2xl">{t("analytics.description")}</p>
             <a

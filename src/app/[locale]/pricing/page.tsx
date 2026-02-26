@@ -19,7 +19,6 @@ export default function PricingPage() {
 
   const categories = [
     { key: "dental", icon: "🦷", color: "blue" },
-    { key: "checkup", icon: "🩺", color: "green" },
     { key: "tcm", icon: "🛁", color: "amber" },
   ];
 
