@@ -11,11 +11,17 @@ export async function POST(req: NextRequest) {
 
   const userEmail = session.user.email;
   if (!userEmail) {
-    return NextResponse.json({ error: "User email is required" }, { status: 400 });
+    return NextResponse.json(
+      { error: "User email is required" },
+      { status: 400 },
+    );
   }
 
   const body = await req.json();
-  const { packageKey, locale } = body as { packageKey: PackageKey; locale: string };
+  const { packageKey, locale } = body as {
+    packageKey: PackageKey;
+    locale: string;
+  };
 
   const product = stripeProducts[packageKey];
   if (!product) {
@@ -29,10 +35,12 @@ export async function POST(req: NextRequest) {
     email: userEmail,
     limit: 1,
   });
-  const customer = existingCustomers.data[0] ?? await stripe.customers.create({
-    email: userEmail,
-    name: session.user.name,
-  });
+  const customer =
+    existingCustomers.data[0] ??
+    (await stripe.customers.create({
+      email: userEmail,
+      name: session.user.name,
+    }));
 
   const checkoutSession = await stripe.checkout.sessions.create({
     mode: "payment",

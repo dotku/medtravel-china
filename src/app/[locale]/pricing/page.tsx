@@ -25,7 +25,11 @@ export default function PricingPage() {
     { key: "tcm", icon: "🛁", color: "amber" },
   ];
 
-  const dentalPackageKeys: PackageKey[] = ["single", "half-mouth", "full-mouth"];
+  const dentalPackageKeys: PackageKey[] = [
+    "single",
+    "half-mouth",
+    "full-mouth",
+  ];
 
   const colorClasses: Record<
     string,
@@ -120,9 +124,12 @@ export default function PricingPage() {
                               >
                                 {item.price}
                               </span>
-                              {category.key === "dental" && dentalPackageKeys[index] && (
-                                <BookButton packageKey={dentalPackageKeys[index]} />
-                              )}
+                              {category.key === "dental" &&
+                                dentalPackageKeys[index] && (
+                                  <BookButton
+                                    packageKey={dentalPackageKeys[index]}
+                                  />
+                                )}
                             </td>
                           </tr>
                         ))}

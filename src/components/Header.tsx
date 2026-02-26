@@ -42,7 +42,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-6 md:flex">
+          <div className="hidden items-center gap-6 lg:flex">
             {loggedInLinks.map((link) => (
               <Link
                 key={link.href}
@@ -53,12 +53,16 @@ export function Header() {
               </Link>
             ))}
             <LanguageSwitcher />
-            {!isLoading && (
-              user ? (
+            {!isLoading &&
+              (user ? (
                 <div className="flex items-center gap-3">
                   {user.picture && (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={user.picture} alt={user.name ?? ""} className="h-8 w-8 rounded-full" />
+                    <img
+                      src={user.picture}
+                      alt={user.name ?? ""}
+                      className="h-8 w-8 rounded-full"
+                    />
                   )}
                   <a
                     href="/auth/logout"
@@ -74,14 +78,13 @@ export function Header() {
                 >
                   {t("login")}
                 </a>
-              )
-            )}
+              ))}
           </div>
 
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 md:hidden"
+            className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -111,7 +114,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t border-gray-200 py-4 md:hidden">
+          <div className="border-t border-gray-200 py-4 lg:hidden">
             <div className="flex flex-col gap-4">
               {loggedInLinks.map((link) => (
                 <Link
@@ -125,9 +128,12 @@ export function Header() {
               ))}
               <div className="pt-2 flex items-center justify-between">
                 <LanguageSwitcher />
-                {!isLoading && (
-                  user ? (
-                    <a href="/auth/logout" className="text-sm font-medium text-gray-500 hover:text-gray-900">
+                {!isLoading &&
+                  (user ? (
+                    <a
+                      href="/auth/logout"
+                      className="text-sm font-medium text-gray-500 hover:text-gray-900"
+                    >
                       {t("logout")}
                     </a>
                   ) : (
@@ -137,8 +143,7 @@ export function Header() {
                     >
                       {t("login")}
                     </a>
-                  )
-                )}
+                  ))}
               </div>
             </div>
           </div>
