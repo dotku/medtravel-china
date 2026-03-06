@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts, getBlogPost } from "@/lib/blog-posts";
+import { getBlogPost } from "@/lib/blog-posts";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
-
-export async function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -72,9 +68,9 @@ export default async function BlogPostPage({ params }: Props) {
                 day: "numeric",
               })}
             </time>
-            <span>·</span>
+            <span>&middot;</span>
             <span>{post.readTime}</span>
-            <span>·</span>
+            <span>&middot;</span>
             <span>By {post.author}</span>
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
