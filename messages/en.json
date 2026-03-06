@@ -115,17 +115,35 @@
       "dental": {
         "name": "3-Week All-Inclusive Packages",
         "items": [
-          { "name": "Single Implant — 3-Week Package", "price": "From $7,800" },
-          { "name": "Half-Mouth All-on-4 — 3-Week Package", "price": "From $16,800" },
-          { "name": "Full-Mouth All-on-4 — 3-Week Package", "price": "From $24,800" }
+          {
+            "name": "Single Implant — 3-Week Package",
+            "price": "From $7,800"
+          },
+          {
+            "name": "Half-Mouth All-on-4 — 3-Week Package",
+            "price": "From $16,800"
+          },
+          {
+            "name": "Full-Mouth All-on-4 — 3-Week Package",
+            "price": "From $24,800"
+          }
         ]
       },
       "tcm": {
         "name": "Add-Ons (available with any package)",
         "items": [
-          { "name": "TCM Herbal Bath 10-Session Course", "price": "Included in 3-week packages" },
-          { "name": "Private Photography Tour", "price": "From $300" },
-          { "name": "Extended Hotel Stay (per night)", "price": "From $80" }
+          {
+            "name": "TCM Herbal Bath 10-Session Course",
+            "price": "Included in 3-week packages"
+          },
+          {
+            "name": "Private Photography Tour",
+            "price": "From $300"
+          },
+          {
+            "name": "Extended Hotel Stay (per night)",
+            "price": "From $80"
+          }
         ]
       }
     },
@@ -156,10 +174,22 @@
         "title": "How It Works",
         "subtitle": "Your journey to better health in 4 simple steps",
         "steps": [
-          { "title": "Initial Consultation", "description": "Contact us with your medical needs and we'll provide a personalized plan." },
-          { "title": "Treatment Planning", "description": "Our medical team reviews your case and prepares a detailed treatment plan." },
-          { "title": "Travel Arrangement", "description": "We handle all travel logistics including flights, accommodation, and transfers." },
-          { "title": "Treatment & Recovery", "description": "Receive treatment at our partner hospitals with full support throughout." }
+          {
+            "title": "Initial Consultation",
+            "description": "Contact us with your medical needs and we'll provide a personalized plan."
+          },
+          {
+            "title": "Treatment Planning",
+            "description": "Our medical team reviews your case and prepares a detailed treatment plan."
+          },
+          {
+            "title": "Travel Arrangement",
+            "description": "We handle all travel logistics including flights, accommodation, and transfers."
+          },
+          {
+            "title": "Treatment & Recovery",
+            "description": "Receive treatment at our partner hospitals with full support throughout."
+          }
         ]
       },
       "cta": {
@@ -176,10 +206,22 @@
       "bookConsultation": "Book Consultation",
       "viewServices": "View Services",
       "features": {
-        "accredited": { "title": "Gov't Approved", "description": "Licensed by China's National Health Commission" },
-        "international": { "title": "EU/US Standards", "description": "German 4-hand technique, European sterilization protocols" },
-        "technology": { "title": "3D CBCT Imaging", "description": "German Kavo Cranex3D — the same system used in top US/EU dental centers" },
-        "specialists": { "title": "Expert Implantologists", "description": "Led by Dr. Shi Weizhong, former chief of Guangxi Worker's Hospital Dental Dept." }
+        "accredited": {
+          "title": "Gov't Approved",
+          "description": "Licensed by China's National Health Commission"
+        },
+        "international": {
+          "title": "EU/US Standards",
+          "description": "German 4-hand technique, European sterilization protocols"
+        },
+        "technology": {
+          "title": "3D CBCT Imaging",
+          "description": "German Kavo Cranex3D — the same system used in top US/EU dental centers"
+        },
+        "specialists": {
+          "title": "Expert Implantologists",
+          "description": "Led by Dr. Shi Weizhong, former chief of Guangxi Worker's Hospital Dental Dept."
+        }
       },
       "specialtyList": {
         "cardiology": "Dental Implants",
@@ -214,20 +256,44 @@
         "title": "Our Core Values",
         "subtitle": "The principles that guide everything we do",
         "items": {
-          "care": { "title": "Patient-First", "description": "All decisions — clinic selection, itinerary, pricing — center on patient safety and comfort." },
-          "excellence": { "title": "Clinical Excellence", "description": "Xiangya Dental uses the same implant systems and protocols as top US and European clinics." },
-          "trust": { "title": "Full Transparency", "description": "Itemized pricing, written contracts, and no hidden fees. You know exactly what you're paying for." },
-          "accessibility": { "title": "Accessible Pricing", "description": "Save 60–70% vs. North American rates without compromising on quality of care." }
+          "care": {
+            "title": "Patient-First",
+            "description": "All decisions — clinic selection, itinerary, pricing — center on patient safety and comfort."
+          },
+          "excellence": {
+            "title": "Clinical Excellence",
+            "description": "Xiangya Dental uses the same implant systems and protocols as top US and European clinics."
+          },
+          "trust": {
+            "title": "Full Transparency",
+            "description": "Itemized pricing, written contracts, and no hidden fees. You know exactly what you're paying for."
+          },
+          "accessibility": {
+            "title": "Accessible Pricing",
+            "description": "Save 60–70% vs. North American rates without compromising on quality of care."
+          }
         }
       },
       "whyGuangxi": {
         "title": "Why Nanning & Guangxi?",
         "description": "Nanning is Guangxi's capital — a modern, international city with excellent hospitals and direct flights from major hubs. After surgery, Guangxi offers some of China's most spectacular scenery: the Detian waterfall, Bama longevity valley, Guilin karst mountains, and more — all within a 4-hour drive.",
         "highlights": [
-          { "title": "Partner Institutions", "value": "10+" },
-          { "title": "Travel Market", "value": "7M+" },
-          { "title": "Core Services", "value": "3" },
-          { "title": "Savings vs. US", "value": "60–70%" }
+          {
+            "title": "Partner Institutions",
+            "value": "10+"
+          },
+          {
+            "title": "Travel Market",
+            "value": "7M+"
+          },
+          {
+            "title": "Core Services",
+            "value": "3"
+          },
+          {
+            "title": "Savings vs. US",
+            "value": "60–70%"
+          }
         ]
       },
       "team": {
@@ -368,16 +434,34 @@
         "selectService": "Select a service...",
         "message": "Your Message",
         "submit": "Send Message",
-        "success": "Thank you! Your message has been sent. We'll contact you soon."
+        "success": "Thank you! Your message has been sent. We'll contact you soon.",
+        "submitting": "Sending...",
+        "successMessage": "Thank you! We will contact you within 24 hours.",
+        "errorMessage": "Something went wrong. Please try again or contact us directly."
       },
       "faq": {
         "title": "Frequently Asked Questions",
         "items": [
-          { "question": "Am I a good candidate for dental implants?", "answer": "Most adults with good general health qualify. We ask you to send us a recent panoramic X-ray or CBCT scan (or we'll arrange one on arrival). Our Xiangya team will assess bone density, gum health, and sinus proximity before confirming a treatment plan." },
-          { "question": "How long do I need to stay in China?", "answer": "Our standard package is 3 weeks. Week 1 is for surgery and initial healing. Weeks 2–3 you'll tour Guangxi and do your herbal bath recovery sessions, returning for a check-up before you fly home. Same-day or 2-stage implants can be discussed for shorter stays." },
-          { "question": "What implant brands do you use?", "answer": "Xiangya Dental offers Swiss ITI (Straumann), US Zirconia ET, and Korean Osstem systems — all internationally recognized brands used in US and EU clinics. Brand and material choice affects cost and is discussed during your consultation." },
-          { "question": "Do you provide visa assistance?", "answer": "Yes. We provide a formal invitation letter from Xiangya Dental Clinic to support your medical visa application, plus guidance on the application process from our US team." },
-          { "question": "Is payment secure?", "answer": "All payments are made to the designated receiving account stated in your written service agreement. We provide itemized invoices and a written service agreement before you pay anything. We do not collect payments through third-party travel agents." }
+          {
+            "question": "Am I a good candidate for dental implants?",
+            "answer": "Most adults with good general health qualify. We ask you to send us a recent panoramic X-ray or CBCT scan (or we'll arrange one on arrival). Our Xiangya team will assess bone density, gum health, and sinus proximity before confirming a treatment plan."
+          },
+          {
+            "question": "How long do I need to stay in China?",
+            "answer": "Our standard package is 3 weeks. Week 1 is for surgery and initial healing. Weeks 2–3 you'll tour Guangxi and do your herbal bath recovery sessions, returning for a check-up before you fly home. Same-day or 2-stage implants can be discussed for shorter stays."
+          },
+          {
+            "question": "What implant brands do you use?",
+            "answer": "Xiangya Dental offers Swiss ITI (Straumann), US Zirconia ET, and Korean Osstem systems — all internationally recognized brands used in US and EU clinics. Brand and material choice affects cost and is discussed during your consultation."
+          },
+          {
+            "question": "Do you provide visa assistance?",
+            "answer": "Yes. We provide a formal invitation letter from Xiangya Dental Clinic to support your medical visa application, plus guidance on the application process from our US team."
+          },
+          {
+            "question": "Is payment secure?",
+            "answer": "All payments are made to the designated receiving account stated in your written service agreement. We provide itemized invoices and a written service agreement before you pay anything. We do not collect payments through third-party travel agents."
+          }
         ]
       }
     },
@@ -402,28 +486,76 @@
       "metrics": {
         "title": "Key Business Metrics",
         "items": [
-          { "label": "Partner Institutions", "value": "10+", "desc": "Medical & travel partners across Guangxi" },
-          { "label": "Travel Market Coverage", "value": "7M+", "desc": "Potential travelers in our target market" },
-          { "label": "Medical Services", "value": "3", "desc": "Focused specialty services offered" },
-          { "label": "Support", "value": "24/7", "desc": "Patient coordinator availability" }
+          {
+            "label": "Partner Institutions",
+            "value": "10+",
+            "desc": "Medical & travel partners across Guangxi"
+          },
+          {
+            "label": "Travel Market Coverage",
+            "value": "7M+",
+            "desc": "Potential travelers in our target market"
+          },
+          {
+            "label": "Medical Services",
+            "value": "3",
+            "desc": "Focused specialty services offered"
+          },
+          {
+            "label": "Support",
+            "value": "24/7",
+            "desc": "Patient coordinator availability"
+          }
         ]
       },
       "traffic": {
         "title": "Traffic & Conversions",
         "subtitle": "Representative website performance metrics",
         "items": [
-          { "label": "Monthly Visitors", "value": "2,400+", "desc": "Unique website visitors per month", "trend": "+18% MoM" },
-          { "label": "Avg. Session Duration", "value": "3m 42s", "desc": "Average time spent on site", "trend": "+6% MoM" },
-          { "label": "Inquiry Rate", "value": "4.8%", "desc": "Visitors who submit a contact form", "trend": "+1.2pp MoM" },
-          { "label": "Consult Conversion", "value": "68%", "desc": "Inquiries that convert to consultations", "trend": "+5% MoM" }
+          {
+            "label": "Monthly Visitors",
+            "value": "2,400+",
+            "desc": "Unique website visitors per month",
+            "trend": "+18% MoM"
+          },
+          {
+            "label": "Avg. Session Duration",
+            "value": "3m 42s",
+            "desc": "Average time spent on site",
+            "trend": "+6% MoM"
+          },
+          {
+            "label": "Inquiry Rate",
+            "value": "4.8%",
+            "desc": "Visitors who submit a contact form",
+            "trend": "+1.2pp MoM"
+          },
+          {
+            "label": "Consult Conversion",
+            "value": "68%",
+            "desc": "Inquiries that convert to consultations",
+            "trend": "+5% MoM"
+          }
         ]
       },
       "topServices": {
         "title": "Top Services by Interest",
         "items": [
-          { "name": "Dental Care", "share": "45%", "bar": 45 },
-          { "name": "Health Checkup (CT)", "share": "32%", "bar": 32 },
-          { "name": "TCM Herbal Bath", "share": "23%", "bar": 23 }
+          {
+            "name": "Dental Care",
+            "share": "45%",
+            "bar": 45
+          },
+          {
+            "name": "Health Checkup (CT)",
+            "share": "32%",
+            "bar": 32
+          },
+          {
+            "name": "TCM Herbal Bath",
+            "share": "23%",
+            "bar": 23
+          }
         ]
       },
       "analytics": {
