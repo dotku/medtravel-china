@@ -12,21 +12,48 @@ export default function ContactPage() {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error";
+    message: string;
+  } | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = formData.name ? `咨询请求 - ${formData.name}` : "咨询请求";
-    const body = [
-      `姓名: ${formData.name}`,
-      `邮箱: ${formData.email}`,
-      `电话: ${formData.phone || "N/A"}`,
-      "",
-      "留言:",
-      formData.message,
-    ].join("\n");
+    setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    const mailtoUrl = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
+    try {
+      const response = await fetch("/api/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message: t("pages.contact.form.successMessage"),
+        });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || t("pages.contact.form.errorMessage"),
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: t("pages.contact.form.errorMessage"),
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -210,6 +237,18 @@ export default function ContactPage() {
               </p>
 
               <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+                {submitStatus && (
+                  <div
+                    className={`rounded-lg p-4 ${
+                      submitStatus.type === "success"
+                        ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
+                        : "bg-red-50 text-red-800 border border-red-200"
+                    }`}
+                  >
+                    {submitStatus.message}
+                  </div>
+                )}
+
                 <div>
                   <label
                     htmlFor="name"
@@ -224,7 +263,8 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                    disabled={isSubmitting}
+                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
 
@@ -243,7 +283,8 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                      disabled={isSubmitting}
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                     />
                   </div>
                   <div>
@@ -259,7 +300,8 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                      disabled={isSubmitting}
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                     />
                   </div>
                 </div>
@@ -278,15 +320,19 @@ export default function ContactPage() {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                    disabled={isSubmitting}
+                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-emerald-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-emerald-700"
+                  disabled={isSubmitting}
+                  className="w-full rounded-lg bg-emerald-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-emerald-700 disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
-                  {t("pages.contact.form.submit")}
+                  {isSubmitting
+                    ? t("pages.contact.form.submitting")
+                    : t("pages.contact.form.submit")}
                 </button>
               </form>
             </div>

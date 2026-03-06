@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBlogPost } from "@/lib/blog-posts";
+import BlogLeadForm from "@/components/BlogLeadForm";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -132,21 +133,8 @@ export default async function BlogPostPage({ params }: Props) {
           })}
         </div>
 
-        {/* CTA */}
-        <div className="mt-16 rounded-2xl bg-emerald-50 p-8 text-center">
-          <h3 className="text-xl font-semibold text-gray-900">
-            Ready to Start Your Dental Tourism Journey?
-          </h3>
-          <p className="mt-3 text-gray-600">
-            Get a free consultation and personalized cost breakdown within 24 hours.
-          </p>
-          <Link
-            href={`/${locale}`}
-            className="mt-6 inline-flex items-center rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white transition-all hover:bg-emerald-700"
-          >
-            Get Free Consultation
-          </Link>
-        </div>
+        {/* Lead Capture Form */}
+        <BlogLeadForm />
       </div>
     </article>
   );
