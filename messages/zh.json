@@ -16,7 +16,8 @@
     "getQuote": "获取报价",
     "login": "登录",
     "logout": "退出",
-    "orders": "我的订单"
+    "orders": "我的订单",
+    "patientChat": "患者咨询"
   },
   "home": {
     "hero": {

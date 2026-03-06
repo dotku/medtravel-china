@@ -16,7 +16,8 @@
     "getQuote": "Get Quote",
     "login": "Login",
     "logout": "Logout",
-    "orders": "My Orders"
+    "orders": "My Orders",
+    "patientChat": "Patient Chat"
   },
   "home": {
     "hero": {

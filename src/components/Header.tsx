@@ -15,12 +15,15 @@ export function Header() {
 
   const locale = pathname.split("/")[1];
 
+  const medchatUrl = process.env.NEXT_PUBLIC_MEDCHAT_URL || "https://medchat.jytech.us";
+  
   const navLinks = [
     { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/pricing`, label: t("pricing") },
     { href: `/${locale}/blog`, label: t("blog") },
     { href: `/${locale}/about`, label: t("about") },
     { href: `/${locale}/contact`, label: t("contact") },
+    { href: `${medchatUrl}/${locale}`, label: t("patientChat"), external: true },
   ];
 
   const loggedInLinks = [
@@ -44,15 +47,27 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-6 lg:flex">
-            {loggedInLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {loggedInLinks.map((link) => 
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <LanguageSwitcher />
             {!isLoading &&
               (user ? (
@@ -117,16 +132,29 @@ export function Header() {
         {isMenuOpen && (
           <div className="border-t border-gray-200 py-4 lg:hidden">
             <div className="flex flex-col gap-4">
-              {loggedInLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {loggedInLinks.map((link) => 
+                link.external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-base font-medium text-gray-600 transition-colors hover:text-emerald-600"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              )}
               <div className="pt-2 flex items-center justify-between">
                 <LanguageSwitcher />
                 {!isLoading &&
