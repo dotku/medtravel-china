@@ -7,19 +7,39 @@ export interface BlogPost {
   author: string;
   readTime: string;
   content: string;
+  titleZh?: string;
+  metaDescriptionZh?: string;
+  excerptZh?: string;
+  readTimeZh?: string;
+  contentZh?: string;
+}
+
+export interface LocalizedBlogPost {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  readTime: string;
+  content: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "what-to-expect-dental-implant-procedure",
     title: "What to Expect During Your Dental Implant Procedure: Complete Step-by-Step Guide",
+    titleZh: "种植牙手术全程详解：从咨询到完成的完整指南",
     metaDescription:
       "Detailed walkthrough of the dental implant procedure from consultation to final crown placement. Learn what happens during surgery, recovery timeline, and pain management.",
+    metaDescriptionZh: "种植牙手术全程详细解读，从初诊咨询到最终牙冠安装。了解手术过程、恢复时间和疼痛管理。",
     excerpt:
       "Understanding the dental implant procedure reduces anxiety and helps you prepare. Here's exactly what happens from your first consultation through final crown placement.",
+    excerptZh: "了解种植牙手术的每个阶段可以减少焦虑并帮助您做好准备。以下是从初次咨询到最终牙冠安装的详细过程。",
     date: "2026-03-06",
     author: "Carrie Lan",
     readTime: "10 min read",
+    readTimeZh: "阅读约10分钟",
     content: `## Your Complete Dental Implant Procedure Timeline
 
 If you're considering dental implants, understanding what to expect during each phase of treatment transforms anxiety into confidence. The dental implant procedure is one of modern dentistry's most successful treatments, with a 95-98% success rate when performed by qualified professionals. Here's your comprehensive guide to every step of the journey.
@@ -229,13 +249,8 @@ Your dental implant procedure represents a significant investment in your oral h
 Whether you're receiving treatment in Nanning, China, or your home country, these procedural fundamentals remain consistent. The combination of modern technology, skilled surgical technique, and your own diligent aftercare creates the foundation for implant success.
 
 **Ready to Begin?**
-Schedule your consultation with a qualified implant dentist. Bring this guide and your questions. Understanding your dental implant procedure is the first step toward the confident, healthy smile you deserve.
-
----
-
-## Chinese Version | 中文版
-
-## 种植牙手术全程详解：从咨询到完成的完整指南
+Schedule your consultation with a qualified implant dentist. Bring this guide and your questions. Understanding your dental implant procedure is the first step toward the confident, healthy smile you deserve.`,
+    contentZh: `## 种植牙手术全程详解：从咨询到完成的完整指南
 
 如果您正在考虑种植牙，了解治疗的每个阶段会让焦虑转化为信心。种植牙手术是现代牙科最成功的治疗方式之一，在合格专业人员的操作下，成功率达到95-98%。以下是整个治疗过程的综合指南。
 
@@ -449,13 +464,17 @@ Schedule your consultation with a qualified implant dentist. Bring this guide an
   {
     slug: "dental-implant-aftercare-recovery-guide",
     title: "Dental Implant Aftercare: Complete Recovery Guide for Lasting Results",
+    titleZh: "种植牙术后护理：持久效果的完整恢复指南",
     metaDescription:
       "Essential dental implant aftercare guide for successful recovery. Learn post-operative care, healing timeline, diet tips, pain management, and how to ensure long-term implant success.",
+    metaDescriptionZh: "种植牙术后护理完整指南。了解术后护理、愈合时间、饮食建议、疼痛管理以及如何确保长期成功。",
     excerpt:
       "Proper aftercare determines implant success. Follow this comprehensive guide to ensure fast healing, prevent complications, and maintain your dental implants for decades.",
+    excerptZh: "正确的术后护理决定种植牙的成功。遵循本指南确保快速愈合、预防并发症，让您的种植牙持久使用数十年。",
     date: "2026-03-06",
     author: "Carrie Lan",
     readTime: "10 min read",
+    readTimeZh: "阅读约10分钟",
     content: `## Your Dental Implant Aftercare Guide for Optimal Healing
 
 Dental implants boast a 95-98% success rate when patients follow proper aftercare protocols. Whether you received your implants domestically or through dental tourism in China, the weeks following your procedure are critical for long-term success. This comprehensive guide walks you through every stage of recovery, from the first 24 hours to permanent maintenance.
@@ -720,13 +739,17 @@ Your dental implant journey doesn't end when you leave the dental chair — it b
   {
     slug: "guangxi-dental-tourism-travel-guide-2026",
     title: "Guangxi Dental Tourism: Complete Travel Guide for Medical Travelers 2026",
+    titleZh: "广西牙科旅游：2026年医疗旅客完整旅行指南",
     metaDescription:
       "Planning dental tourism in Guangxi, China? Essential travel tips for Nanning, visa requirements, accommodation, local transport, and recovery activities for dental patients.",
+    metaDescriptionZh: "计划去广西牙科旅游？南宁旅行攻略、签证要求、住宿推荐、交通指南和术后恢复活动一应俱全。",
     excerpt:
       "Combining dental treatment with travel in Guangxi offers world-class care in one of China's most scenic regions. Here's your complete guide to planning the perfect dental tourism trip.",
+    excerptZh: "在广西一边治疗牙齿一边旅游，享受世界级医疗服务和中国最美风景。这是您规划完美牙科旅游之旅的完整指南。",
     date: "2026-03-06",
     author: "Carrie Lan",
     readTime: "9 min read",
+    readTimeZh: "阅读约9分钟",
     content: `## Your Complete Guide to Dental Tourism in Guangxi
 
 Guangxi Province has emerged as China's premier dental tourism destination, offering the unique combination of world-class dental care and breathtaking natural scenery. Whether you're traveling to Nanning for dental implants, veneers, or comprehensive dental work, understanding the region helps you plan a successful trip that combines treatment with an unforgettable recovery experience.
@@ -950,13 +973,17 @@ With proper planning, your dental tourism journey transforms from a medical nece
   {
     slug: "dental-implants-china-cost-2026",
     title: "Dental Implants China Cost: Complete 2026 Price Guide & What to Expect",
+    titleZh: "中国种植牙费用：2026完整价格指南",
     metaDescription:
       "Discover dental implants China cost savings of 60-70% vs US prices. Complete breakdown of Nanning implant procedures, quality standards, and all-inclusive packages.",
+    metaDescriptionZh: "了解中国种植牙费用比美国节省60-70%。南宁种植牙手术、质量标准和全包套餐的完整价格对比。",
     excerpt:
       "A single implant costs $3,000-$6,000 in the US. In Nanning, China, the same procedure with identical materials saves you 60-70%. Here's everything you need to know.",
+    excerptZh: "在美国，单颗种植牙费用为$3,000-$6,000。在中国南宁，同样的材料和手术可节省60-70%。以下是您需要了解的一切。",
     date: "2026-03-05",
     author: "Carrie Lan",
     readTime: "8 min read",
+    readTimeZh: "阅读约8分钟",
     content: `## The Real Cost of Dental Implants in China
 
 When facing the prospect of dental implants in the United States, many patients experience sticker shock. Single implants routinely cost between $3,000 and $6,000, while full-mouth restorations can exceed $30,000. This financial burden has led thousands of Americans to explore dental tourism — and China, particularly Nanning, has emerged as a premier destination for world-class dental care at dramatically reduced prices.
@@ -1049,13 +1076,17 @@ Research thoroughly before committing. Request detailed treatment plans, verify 
     slug: "is-dental-tourism-safe",
     title:
       "Is Dental Tourism Safe? Expert Guide to Safe International Dental Care",
+    titleZh: "牙科旅游安全吗？国际牙科护理安全专家指南",
     metaDescription:
       "Concerned about dental tourism safety? Learn how to identify qualified international clinics, verify credentials, and ensure safe dental implants abroad in 2026.",
+    metaDescriptionZh: "担心牙科旅游的安全性？了解如何辨别合格的国际诊所、验证资质，确保海外种植牙安全可靠。",
     excerpt:
       "When approached correctly, dental tourism can be as safe as domestic care while delivering substantial savings. Here's how to verify clinics and protect yourself.",
+    excerptZh: "如果方法得当，牙科旅游可以和国内治疗一样安全，同时大幅节省费用。以下是验证诊所和保护自己的方法。",
     date: "2026-03-04",
     author: "Carrie Lan",
     readTime: "7 min read",
+    readTimeZh: "阅读约7分钟",
     content: `## The Real Safety Picture in Dental Tourism
 
 The promise of saving 60-70% on dental procedures abroad sounds appealing — until safety concerns arise. If you're considering dental tourism, particularly for major procedures like dental implants, understanding safety protocols is essential. The good news: when approached correctly, dental tourism can be as safe as domestic care while delivering substantial savings.
@@ -1161,4 +1192,60 @@ The question isn't whether dental tourism is inherently safe or dangerous — it
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
+}
+
+export function getLocalizedBlogPost(slug: string, locale: string): LocalizedBlogPost | undefined {
+  const post = blogPosts.find((post) => post.slug === slug);
+  if (!post) return undefined;
+
+  if (locale === "zh") {
+    return {
+      slug: post.slug,
+      title: post.titleZh || post.title,
+      metaDescription: post.metaDescriptionZh || post.metaDescription,
+      excerpt: post.excerptZh || post.excerpt,
+      date: post.date,
+      author: post.author,
+      readTime: post.readTimeZh || post.readTime,
+      content: post.contentZh || post.content,
+    };
+  }
+
+  return {
+    slug: post.slug,
+    title: post.title,
+    metaDescription: post.metaDescription,
+    excerpt: post.excerpt,
+    date: post.date,
+    author: post.author,
+    readTime: post.readTime,
+    content: post.content,
+  };
+}
+
+export function getLocalizedBlogPosts(locale: string): LocalizedBlogPost[] {
+  return blogPosts.map((post) => {
+    if (locale === "zh") {
+      return {
+        slug: post.slug,
+        title: post.titleZh || post.title,
+        metaDescription: post.metaDescriptionZh || post.metaDescription,
+        excerpt: post.excerptZh || post.excerpt,
+        date: post.date,
+        author: post.author,
+        readTime: post.readTimeZh || post.readTime,
+        content: post.contentZh || post.content,
+      };
+    }
+    return {
+      slug: post.slug,
+      title: post.title,
+      metaDescription: post.metaDescription,
+      excerpt: post.excerpt,
+      date: post.date,
+      author: post.author,
+      readTime: post.readTime,
+      content: post.content,
+    };
+  });
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getBlogPost } from "@/lib/blog-posts";
+import { getLocalizedBlogPost } from "@/lib/blog-posts";
 import BlogLeadForm from "@/components/BlogLeadForm";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
-  const post = getBlogPost(slug);
+  const post = getLocalizedBlogPost(slug, locale);
   if (!post) return {};
 
   return {
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params;
-  const post = getBlogPost(slug);
+  const post = getLocalizedBlogPost(slug, locale);
 
   if (!post) {
     notFound();
@@ -56,23 +56,26 @@ export default async function BlogPostPage({ params }: Props) {
               d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
             />
           </svg>
-          Back to Blog
+          {locale === "zh" ? "返回博客" : "Back to Blog"}
         </Link>
 
         {/* Header */}
         <header className="mt-8">
           <div className="flex items-center gap-3 text-sm text-gray-500">
             <time dateTime={post.date}>
-              {new Date(post.date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+              {new Date(post.date).toLocaleDateString(
+                locale === "zh" ? "zh-CN" : "en-US",
+                {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                }
+              )}
             </time>
             <span>&middot;</span>
             <span>{post.readTime}</span>
             <span>&middot;</span>
-            <span>By {post.author}</span>
+            <span>{locale === "zh" ? "作者：" : "By "}{post.author}</span>
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {post.title}

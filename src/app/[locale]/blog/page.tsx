@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { blogPosts } from "@/lib/blog-posts";
+import { getLocalizedBlogPosts } from "@/lib/blog-posts";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
+  const posts = getLocalizedBlogPosts(locale);
 
   return (
     <div className="bg-white py-16 sm:py-24">
@@ -38,7 +39,7 @@ export default async function BlogPage({ params }: Props) {
         </div>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2">
-          {blogPosts.map((post) => (
+          {posts.map((post) => (
             <article
               key={post.slug}
               className="group overflow-hidden rounded-2xl bg-gray-50 transition-all hover:shadow-lg"
@@ -46,11 +47,14 @@ export default async function BlogPage({ params }: Props) {
               <div className="p-8">
                 <div className="flex items-center gap-3 text-sm text-gray-500">
                   <time dateTime={post.date}>
-                    {new Date(post.date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
+                    {new Date(post.date).toLocaleDateString(
+                      locale === "zh" ? "zh-CN" : "en-US",
+                      {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      }
+                    )}
                   </time>
                   <span>·</span>
                   <span>{post.readTime}</span>
@@ -67,7 +71,7 @@ export default async function BlogPage({ params }: Props) {
                   href={`/${locale}/blog/${post.slug}`}
                   className="mt-6 inline-flex items-center text-sm font-medium text-emerald-600 transition-colors hover:text-emerald-700"
                 >
-                  Read more
+                  {locale === "zh" ? "阅读更多" : "Read more"}
                   <svg
                     className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1"
                     fill="none"
