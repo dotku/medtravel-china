@@ -11,6 +11,236 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "guangxi-dental-tourism-travel-guide-2026",
+    title: "Guangxi Dental Tourism: Complete Travel Guide for Medical Travelers 2026",
+    metaDescription:
+      "Planning dental tourism in Guangxi, China? Essential travel tips for Nanning, visa requirements, accommodation, local transport, and recovery activities for dental patients.",
+    excerpt:
+      "Combining dental treatment with travel in Guangxi offers world-class care in one of China's most scenic regions. Here's your complete guide to planning the perfect dental tourism trip.",
+    date: "2026-03-06",
+    author: "Carrie Lan",
+    readTime: "9 min read",
+    content: `## Your Complete Guide to Dental Tourism in Guangxi
+
+Guangxi Province has emerged as China's premier dental tourism destination, offering the unique combination of world-class dental care and breathtaking natural scenery. Whether you're traveling to Nanning for dental implants, veneers, or comprehensive dental work, understanding the region helps you plan a successful trip that combines treatment with an unforgettable recovery experience.
+
+## Why Guangxi Is Perfect for Dental Tourism
+
+Located in southern China, Guangxi Zhuang Autonomous Region combines modern medical infrastructure with natural beauty. The capital city Nanning serves as the medical hub with 300+ licensed dental clinics, while surrounding areas like Guilin and Yangshuo offer some of China's most iconic karst mountain landscapes — perfect for gentle recovery activities.
+
+**Key Advantages:**
+- Direct international flights to Nanning Wuxu International Airport
+- Tropical climate with mild winters (60-70°F) and warm summers
+- English-speaking medical coordinators at major dental clinics
+- Comprehensive dental tourism packages including accommodation and transport
+- UNESCO World Heritage sites within easy reach for recovery tourism
+
+## Before You Travel: Essential Preparations
+
+**Visa Requirements:**
+Most US citizens need a tourist visa (L visa) for China. As of 2026, some regions including Guangxi offer 15-day visa-free transit for certain nationalities — verify current policies before booking. Standard 30-day tourist visas require:
+- Valid passport (6+ months remaining)
+- Completed visa application
+- Recent passport photo
+- Proof of onward travel
+- Processing time: 4-7 business days
+
+**Medical Preparations:**
+- Request detailed treatment plan from your dental clinic 4-6 weeks before travel
+- Obtain digital copies of dental X-rays and medical history
+- Verify your dental clinic accepts your deposit payment method
+- Purchase medical travel insurance covering dental procedures
+- Pack any prescription medications in original containers
+
+**Communication:**
+Download essential apps before arrival:
+- WeChat (universal messaging and payment app)
+- Pleco (English-Chinese dictionary with camera translation)
+- Google Translate (download offline Chinese language pack)
+- Baidu Maps (more reliable than Google Maps in China)
+
+## Getting to Nanning
+
+**By Air:**
+Nanning Wuxu International Airport (NNG) connects to major Asian hubs. Most US travelers route through:
+- Guangzhou (2-hour layover, 1-hour flight to Nanning)
+- Hong Kong (3-hour direct flight to Nanning)
+- Shanghai (3.5-hour flight to Nanning)
+
+**From Airport to City:**
+- Airport shuttle bus: ¥20 ($3), 45 minutes to downtown
+- Taxi: ¥80-120 ($12-18), 30-40 minutes
+- DiDi ride-hailing: ¥60-90 ($9-13), 35 minutes
+
+Most all-inclusive dental packages include airport pickup, eliminating navigation stress.
+
+## Where to Stay During Treatment
+
+**Dental Package Accommodation:**
+Many clinics partner with hotels near their facilities, offering:
+- Comfortable 3-4 star hotels within 10 minutes of clinic
+- English-speaking staff familiar with medical tourists
+- Quiet rooms conducive to recovery
+- Western and Chinese breakfast options
+
+**Independent Booking:**
+If booking separately, consider these neighborhoods:
+
+**Qingxiu District (recommended):**
+- Near major dental clinics
+- Mix of international and local hotels ($40-120/night)
+- Shopping, restaurants, parks nearby
+- Qingxiu Mountain for gentle recovery walks
+
+**Wuxiang New District:**
+- Modern development area
+- International hotel chains
+- Near airport (convenient for arrival/departure)
+
+**Langdong Business District:**
+- Upscale hotels and shopping
+- International restaurants
+- MixC shopping mall with familiar brands
+
+Budget: $30-50/night for comfortable Chinese hotels; $80-150/night for international brands like Sheraton or Wanda.
+
+## Navigating Nanning
+
+**Metro System:**
+Nanning's metro system (opened 2016) offers clean, efficient transport:
+- 5 lines covering major districts
+- English signage and announcements
+- Fares: ¥2-5 ($0.30-0.75)
+- Operating hours: 6:30 AM - 11 PM
+
+**Taxis and Ride-Hailing:**
+- Abundant taxi supply; flag fall ¥9 ($1.30)
+- DiDi (Chinese Uber) widely available
+- Most drivers don't speak English — have addresses written in Chinese
+
+**Transportation Tip:**
+Save your clinic address in Chinese characters on your phone. Most dental tourism providers give you a card with the clinic address in Chinese for taxi drivers.
+
+## Managing Your Recovery Week
+
+**Days 1-3 Post-Procedure:**
+Focus on rest and following post-operative care instructions:
+- Stay near your clinic for easy follow-up visits
+- Stick to soft foods and prescribed diet
+- Gentle walking in hotel area or nearby parks
+- Avoid strenuous activity
+
+**Days 4-7:**
+As healing progresses, consider light activities:
+- **Qingxiu Mountain Park:** Gentle trails, fresh air, minimal exertion
+- **Nanhu Park:** Lakeside walks, peaceful environment
+- **People's Park:** Central location, easy walking paths
+
+**Week 2-3:**
+After your dentist clears you for normal activity:
+- **Guilin day trip:** 2.5-hour bullet train, see iconic karst mountains
+- **Yangshuo excursion:** Scenic countryside, river cruises
+- **Detian Waterfall:** Asia's largest transnational waterfall (4-hour drive)
+- **Longsheng Rice Terraces:** Stunning agricultural landscape
+
+## Food During Recovery
+
+**Soft Foods for Early Recovery:**
+Most all-inclusive packages provide recovery-appropriate meals. If dining independently:
+
+**Congee (rice porridge) restaurants:** Easily digestible, nutritious base
+- **Zhou Ji Congee:** Multiple locations, English picture menus
+- **Healthy Congee House:** Medical district location
+
+**Smoothie and Juice Bars:**
+- Freshly blended fruit smoothies (避开冰块 = "no ice" if sensitive)
+- Coconut water (excellent hydration)
+
+**International Options:**
+- **Starbucks:** Multiple locations, familiar menu
+- **Element Fresh:** Salads, soups, smoothies
+- **Western hotel restaurants:** English menus, recovery-friendly options
+
+**As Healing Progresses:**
+Guangxi offers unique culinary experiences:
+- Guilin rice noodles (soft, flavorful)
+- Vietnamese-influenced cuisine (soft spring rolls, pho)
+- Fresh tropical fruits year-round
+
+## Communication and Payment
+
+**Language:**
+Mandarin Chinese is primary, but English proficiency varies:
+- Dental clinics: Good English communication
+- International hotels: Basic English
+- Restaurants/shops: Limited English
+
+**Strategy:** Use translation apps liberally. Most locals are patient and helpful with tourists.
+
+**Payment Methods:**
+China has transitioned to cashless society:
+- **WeChat Pay and Alipay dominate:** Link to international credit card
+- **Cash still accepted:** Keep some RMB for small vendors
+- **Credit cards:** Major hotels and some restaurants accept Visa/Mastercard
+
+**Money Management:**
+- Notify your bank of China travel to avoid card blocks
+- Carry $200-300 in cash for emergencies
+- ATMs widely available for cash withdrawal
+
+## Weather and What to Pack
+
+**Best Travel Times:**
+- **October-December:** Comfortable 60-75°F, low humidity, ideal for recovery
+- **March-May:** Pleasant spring weather, 70-80°F
+- **June-September:** Hot and humid (85-95°F), afternoon rain showers
+
+**Packing Essentials:**
+- Comfortable, loose-fitting clothing
+- Walking shoes for gentle exercise
+- Light jacket (indoor AC can be strong)
+- Sunscreen and hat for outdoor recovery walks
+- Portable phone charger
+- Electrical adapter (Type A, C, I outlets in China)
+- Small first-aid kit
+
+## Cultural Considerations
+
+**Helpful Behaviors:**
+- Learn basic phrases: "Nǐ hǎo" (hello), "Xièxiè" (thank you)
+- Be patient with communication barriers
+- Respect personal space in crowded areas
+- Avoid loud conversations in public spaces
+
+**Tipping:**
+Not expected or common in China — service charges often included in bills.
+
+## Emergency Contacts
+
+**Save These Numbers:**
+- Emergency: 120 (ambulance) or 110 (police)
+- Your dental clinic's 24-hour contact
+- US Consulate in Guangzhou: +86-20-3814-5000
+- Your hotel front desk number
+- Medical travel insurance provider
+
+## Maximizing Your Dental Tourism Experience
+
+The beauty of Guangxi dental tourism lies in combining medical necessity with cultural exploration. Your 3-week treatment timeline naturally divides into:
+
+**Week 1:** Procedure and intensive recovery
+**Week 2:** Healing with light local exploration
+**Week 3:** Cleared for travel, exploring Guangxi's natural wonders
+
+This staged approach ensures proper healing while letting you experience one of China's most beautiful regions. Many patients report the recovery period becomes an unexpected highlight — forced rest in a fascinating new place creates memorable experiences impossible during typical vacation rushing.
+
+## Making It Seamless
+
+Success in dental tourism comes from preparation and flexibility. Research thoroughly, communicate clearly with your dental provider, and embrace the experience. The combination of significant cost savings, quality care, and the chance to recover in Guangxi's stunning landscapes makes this increasingly popular option both practical and enriching.
+
+With proper planning, your dental tourism journey transforms from a medical necessity into a life-enriching adventure that leaves you with both a healthy smile and unforgettable memories.`,
+  },
+  {
     slug: "dental-implants-china-cost-2026",
     title: "Dental Implants China Cost: Complete 2026 Price Guide & What to Expect",
     metaDescription:
