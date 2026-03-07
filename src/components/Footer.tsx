@@ -1,8 +1,59 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+function NewsletterForm() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    setStatus("loading");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  if (status === "success") {
+    return <p className="text-emerald-400 text-sm mt-2">Subscribed! Check your inbox.</p>;
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="mt-3 flex gap-2">
+      <input
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+        placeholder="your@email.com"
+        className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-500 text-sm focus:outline-none focus:border-emerald-500"
+      />
+      <button
+        type="submit"
+        disabled={status === "loading"}
+        className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 disabled:bg-emerald-600/50 text-white text-sm rounded font-medium transition-colors"
+      >
+        {status === "loading" ? "..." : "Subscribe"}
+      </button>
+    </form>
+  );
+}
 
 export function Footer() {
   const t = useTranslations();
@@ -23,7 +74,7 @@ export function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
+          {/* Brand + Newsletter */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-600 text-white font-bold">
@@ -34,6 +85,10 @@ export function Footer() {
             <p className="mt-4 max-w-md text-base leading-relaxed">
               {t("footer.description")}
             </p>
+            <div className="mt-4 max-w-md">
+              <p className="text-sm text-white font-medium">Get dental tourism tips &amp; exclusive offers</p>
+              <NewsletterForm />
+            </div>
           </div>
 
           {/* Quick Links */}
