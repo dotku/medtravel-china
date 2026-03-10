@@ -8,7 +8,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 const CONTACT = {
-  email: "carrie.lan998@gmail.com",
+  email: "helenlan202602@gmail.com",
   phone: "+1 (415) 851-1937",
 };
 
@@ -24,10 +24,10 @@ const PLACEHOLDERS: Record<string, string> = {
 
 const CONTACT_LABELS: Record<string, { title: string; note: string }> = {
   en: {
-    title: "Talk to Carrie Lan",
+    title: "Talk to Helen Lan",
     note: "Usually replies within a few hours.",
   },
-  zh: { title: "联系协调员 Carrie Lan", note: "通常在数小时内回复。" },
+  zh: { title: "联系协调员 Helen Lan", note: "通常在数小时内回复。" },
 };
 
 const AI_LABEL: Record<string, string> = {

@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function ContactPage() {
   const t = useTranslations();
-  const contactEmail = "carrie.lan998@gmail.com";
+  const contactEmail = "helenlan202602@gmail.com";
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -80,7 +80,7 @@ export default function ContactPage() {
         </svg>
       ),
       key: "contact",
-      value: "Carrie Lan",
+      value: "Helen Lan",
     },
     {
       icon: (
@@ -99,7 +99,7 @@ export default function ContactPage() {
         </svg>
       ),
       key: "email",
-      value: "carrie.lan998@gmail.com",
+      value: "helenlan202602@gmail.com",
     },
     {
       icon: (

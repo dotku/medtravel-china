@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
       "Understanding the dental implant procedure reduces anxiety and helps you prepare. Here's exactly what happens from your first consultation through final crown placement.",
     excerptZh: "了解种植牙手术的每个阶段可以减少焦虑并帮助您做好准备。以下是从初次咨询到最终牙冠安装的详细过程。",
     date: "2026-03-06",
-    author: "Carrie Lan",
+    author: "Helen Lan",
     readTime: "10 min read",
     readTimeZh: "阅读约10分钟",
     content: `## Your Complete Dental Implant Procedure Timeline
@@ -472,7 +472,7 @@ Schedule your consultation with a qualified implant dentist. Bring this guide an
       "Proper aftercare determines implant success. Follow this comprehensive guide to ensure fast healing, prevent complications, and maintain your dental implants for decades.",
     excerptZh: "正确的术后护理决定种植牙的成功。遵循本指南确保快速愈合、预防并发症，让您的种植牙持久使用数十年。",
     date: "2026-03-06",
-    author: "Carrie Lan",
+    author: "Helen Lan",
     readTime: "10 min read",
     readTimeZh: "阅读约10分钟",
     content: `## Your Dental Implant Aftercare Guide for Optimal Healing
@@ -747,7 +747,7 @@ Your dental implant journey doesn't end when you leave the dental chair — it b
       "Combining dental treatment with travel in Guangxi offers world-class care in one of China's most scenic regions. Here's your complete guide to planning the perfect dental tourism trip.",
     excerptZh: "在广西一边治疗牙齿一边旅游，享受世界级医疗服务和中国最美风景。这是您规划完美牙科旅游之旅的完整指南。",
     date: "2026-03-06",
-    author: "Carrie Lan",
+    author: "Helen Lan",
     readTime: "9 min read",
     readTimeZh: "阅读约9分钟",
     content: `## Your Complete Guide to Dental Tourism in Guangxi
@@ -981,7 +981,7 @@ With proper planning, your dental tourism journey transforms from a medical nece
       "A single implant costs $3,000-$6,000 in the US. In Nanning, China, the same procedure with identical materials saves you 60-70%. Here's everything you need to know.",
     excerptZh: "在美国，单颗种植牙费用为$3,000-$6,000。在中国南宁，同样的材料和手术可节省60-70%。以下是您需要了解的一切。",
     date: "2026-03-05",
-    author: "Carrie Lan",
+    author: "Helen Lan",
     readTime: "8 min read",
     readTimeZh: "阅读约8分钟",
     content: `## The Real Cost of Dental Implants in China
@@ -1084,7 +1084,7 @@ Research thoroughly before committing. Request detailed treatment plans, verify 
       "When approached correctly, dental tourism can be as safe as domestic care while delivering substantial savings. Here's how to verify clinics and protect yourself.",
     excerptZh: "如果方法得当，牙科旅游可以和国内治疗一样安全，同时大幅节省费用。以下是验证诊所和保护自己的方法。",
     date: "2026-03-04",
-    author: "Carrie Lan",
+    author: "Helen Lan",
     readTime: "7 min read",
     readTimeZh: "阅读约7分钟",
     content: `## The Real Safety Picture in Dental Tourism

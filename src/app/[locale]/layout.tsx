@@ -86,14 +86,14 @@ export default async function LocaleLayout({ children, params }: Props) {
     description: "Premium medical travel services to Guangxi, China. Dental care, CT health checkups, and TCM herbal bath therapy.",
     url: "https://medtravel-china.com",
     telephone: "+1-415-851-1937",
-    email: "carrie.lan998@gmail.com",
+    email: "helenlan202602@gmail.com",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-415-851-1937",
       contactType: "customer service",
       areaServed: "US",
       availableLanguage: ["English", "Chinese"],
-      name: "Carrie Lan",
+      name: "Helen Lan",
     },
     address: {
       "@type": "PostalAddress",

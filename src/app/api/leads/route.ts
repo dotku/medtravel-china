@@ -68,15 +68,16 @@ export async function POST(request: NextRequest) {
 
     // Send notification email to team
     try {
-      await fetch("https://api.brevo.com/v3/smtp/email", {
+      const emailResponse = await fetch("https://api.brevo.com/v3/smtp/email", {
         method: "POST",
         headers: {
           "api-key": apiKey,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          sender: { name: "MedTravel China", email: "noreply@medtravel-china.com" },
-          to: [{ email: "helenlan202602@gmail.com", name: "Carrie Lan" }],
+          sender: { name: "MedTravel China", email: "helenlan202602@gmail.com" },
+          to: [{ email: "helenlan202602@gmail.com", name: "Helen Lan" }],
+          replyTo: { email, name },
           subject: `New Contact Lead: ${name}`,
           htmlContent: `
             <h2>New Contact Form Submission</h2>
@@ -89,6 +90,10 @@ export async function POST(request: NextRequest) {
           `,
         }),
       });
+      if (!emailResponse.ok) {
+        const emailErrorData = await emailResponse.json().catch(() => ({}));
+        console.error("Brevo email API error:", emailResponse.status, emailErrorData);
+      }
     } catch (emailError) {
       // Log but don't fail the request — contact was already saved
       console.error("Failed to send notification email:", emailError);
