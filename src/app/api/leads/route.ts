@@ -55,10 +55,11 @@ export async function POST(request: NextRequest) {
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      console.error("Brevo API error:", response.status, errorData);
+      console.error("Brevo contacts API error:", response.status, JSON.stringify(errorData));
 
-      // If contact already exists, that's okay — still send notification
-      if (response.status !== 400 || errorData.code !== "duplicate_parameter") {
+      // For server errors (5xx), fail the request
+      // For client errors (4xx like duplicate contact), log and continue to send notification
+      if (response.status >= 500) {
         return NextResponse.json(
           { error: "Failed to save contact" },
           { status: 500 }
